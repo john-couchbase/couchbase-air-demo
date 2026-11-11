@@ -32,7 +32,7 @@ Run `python -m uvicorn air_live.http:app --port 8010`, then `npm run dev:live --
 ## Details and feedback
 
 - [Technical reference and original documentation](README-REFERENCE.md)
-- [Couchbase Design and UI Pattern Repair](https://github.com/jkupchanko/agent-skills)
+- [Couchbase Design and UI Pattern Repair](https://github.com/john-couchbase/agent-skills)
 - [Couchbase setup skill](https://github.com/john-couchbase/couchbase-aidp-setup)
 
 When reporting an issue, include the request or input, what you expected, and a screenshot. Mention whether you used a phone, tablet, or computer.
