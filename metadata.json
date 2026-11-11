@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "name": "aidp-air",
+  "type": "demo",
+  "industry": "Travel & Hospitality",
+  "use_case": "AI triage of a support surge with serverless models",
+  "description": "A field demo of Serverless Bedrock Frontier Models in the AI Data Plane Model Service: a winter storm surge is classified, triaged and resolved inside the data with SQL++.",
+  "couchbase_products": ["Capella", "Server"],
+  "min_version": "",
+  "couchbase_features": ["SQL++", "Indexing", "Vector Search"],
+  "github_handle": "pgryzan-couchbase",
+  "status": "stable",
+  "recording_url": ""
+}

@@ -1,0 +1,4802 @@
+[
+ {
+  "passenger_id": "pax_00729",
+  "pnr": "RNKR7E",
+  "flight_id": "AD1589",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00601",
+  "pnr": "NLZAXB",
+  "flight_id": "AD745",
+  "channel": "chat",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Cleveland?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00823",
+  "pnr": "WELDAW",
+  "flight_id": "AD1288",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00977",
+  "pnr": "S9M3SE",
+  "flight_id": "AD772",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Columbus?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01418",
+  "pnr": "U63XVX",
+  "flight_id": "AD472",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 472?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00072",
+  "pnr": "3Z9K5J",
+  "flight_id": "AD1397",
+  "channel": "app",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1397?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01613",
+  "pnr": "M6EG4L",
+  "flight_id": "AD1301",
+  "channel": "social",
+  "language": "en",
+  "text": "What's the checked bag allowance to Manchester NH?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01449",
+  "pnr": "RGDAJA",
+  "flight_id": "AD1264",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I change my seat on AD 1264?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01086",
+  "pnr": "V2SMG4",
+  "flight_id": "AD914",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I change my seat on AD 914?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01126",
+  "pnr": "AZUTYW",
+  "flight_id": "AD928",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 928?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02259",
+  "pnr": "JBDBBZ",
+  "flight_id": "AD721",
+  "channel": "social",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01426",
+  "pnr": "4BUJBN",
+  "flight_id": "AD1148",
+  "channel": "chat",
+  "language": "en",
+  "text": "Is there wifi on AD 1148?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01781",
+  "pnr": "52SX9C",
+  "flight_id": "AD1110",
+  "channel": "social",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1110.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01506",
+  "pnr": "B3GR39",
+  "flight_id": "AD1417",
+  "channel": "email",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1417?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00050",
+  "pnr": "FQMPNF",
+  "flight_id": "AD1527",
+  "channel": "email",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Pensacola?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00174",
+  "pnr": "EQUR89",
+  "flight_id": "AD1172",
+  "channel": "app",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00207",
+  "pnr": "5W74CR",
+  "flight_id": "AD1124",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01230",
+  "pnr": "TX9PY9",
+  "flight_id": "AD721",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01330",
+  "pnr": "725EKB",
+  "flight_id": "AD772",
+  "channel": "sms",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00539",
+  "pnr": "ZWT957",
+  "flight_id": "AD1808",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Knoxville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00545",
+  "pnr": "7683YN",
+  "flight_id": "AD1470",
+  "channel": "social",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01512",
+  "pnr": "Q8RRLD",
+  "flight_id": "AD509",
+  "channel": "chat",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00731",
+  "pnr": "FKTWP4",
+  "flight_id": "AD1678",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01723",
+  "pnr": "Y8VP7S",
+  "flight_id": "AD1288",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I change my seat on AD 1288?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01581",
+  "pnr": "NKLS97",
+  "flight_id": "AD1235",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I change my seat on AD 1235?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00262",
+  "pnr": "8CH4EH",
+  "flight_id": "AD655",
+  "channel": "social",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01962",
+  "pnr": "USJH79",
+  "flight_id": "AD1808",
+  "channel": "email",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1808.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01157",
+  "pnr": "89XPBW",
+  "flight_id": "AD840",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 840?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01587",
+  "pnr": "ZQZ46Y",
+  "flight_id": "AD438",
+  "channel": "chat",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01122",
+  "pnr": "ACRCJ5",
+  "flight_id": "AD1589",
+  "channel": "social",
+  "language": "en",
+  "text": "What's the checked bag allowance to Richmond?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02023",
+  "pnr": "HY6NXR",
+  "flight_id": "AD1243",
+  "channel": "chat",
+  "language": "en",
+  "text": "Do you have vegetarian meals to New York?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01136",
+  "pnr": "8PF69Q",
+  "flight_id": "AD840",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 840.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00524",
+  "pnr": "AJHZ8T",
+  "flight_id": "AD1148",
+  "channel": "social",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Washington?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00469",
+  "pnr": "TY7P2M",
+  "flight_id": "AD1589",
+  "channel": "social",
+  "language": "en",
+  "text": "Can I change my seat on AD 1589?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01613",
+  "pnr": "M6EG4L",
+  "flight_id": "AD1301",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 1301?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00375",
+  "pnr": "QVMWE9",
+  "flight_id": "AD1208",
+  "channel": "chat",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01888",
+  "pnr": "2S9EQZ",
+  "flight_id": "AD802",
+  "channel": "email",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 802?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01136",
+  "pnr": "8PF69Q",
+  "flight_id": "AD840",
+  "channel": "chat",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00781",
+  "pnr": "QWMXX6",
+  "flight_id": "AD1235",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01723",
+  "pnr": "Y8VP7S",
+  "flight_id": "AD1288",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 1288?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01132",
+  "pnr": "9G327P",
+  "flight_id": "AD455",
+  "channel": "email",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00105",
+  "pnr": "AYRAH4",
+  "flight_id": "AD1110",
+  "channel": "email",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1110.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00025",
+  "pnr": "JBMYMQ",
+  "flight_id": "AD1148",
+  "channel": "social",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1148.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01182",
+  "pnr": "E7EBVH",
+  "flight_id": "AD1077",
+  "channel": "chat",
+  "language": "en",
+  "text": "What's the checked bag allowance to Greensboro?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00189",
+  "pnr": "D5DU59",
+  "flight_id": "AD1204",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Jacksonville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00345",
+  "pnr": "6NJW5P",
+  "flight_id": "AD1803",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I change my seat on AD 1803?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00285",
+  "pnr": "3PE8UZ",
+  "flight_id": "AD685",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01295",
+  "pnr": "7S7MXV",
+  "flight_id": "AD1696",
+  "channel": "chat",
+  "language": "en",
+  "text": "Do you have vegetarian meals to San Francisco?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01256",
+  "pnr": "9VQFZ2",
+  "flight_id": "AD1243",
+  "channel": "email",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1243.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00252",
+  "pnr": "SG9QZ5",
+  "flight_id": "AD959",
+  "channel": "chat",
+  "language": "en",
+  "text": "What's the checked bag allowance to Eau Claire?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00658",
+  "pnr": "TMBECP",
+  "flight_id": "AD1243",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I change my seat on AD 1243?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00030",
+  "pnr": "M7LBAV",
+  "flight_id": "AD1271",
+  "channel": "app",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01707",
+  "pnr": "WW4RH6",
+  "flight_id": "AD685",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01078",
+  "pnr": "JSHE6P",
+  "flight_id": "AD1172",
+  "channel": "chat",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02063",
+  "pnr": "VZJAKG",
+  "flight_id": "AD638",
+  "channel": "chat",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 638.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01442",
+  "pnr": "MVCR96",
+  "flight_id": "AD1026",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01400",
+  "pnr": "E98Z86",
+  "flight_id": "AD1696",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to San Francisco?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00729",
+  "pnr": "RNKR7E",
+  "flight_id": "AD1589",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01928",
+  "pnr": "ALZMYC",
+  "flight_id": "AD1322",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 1322?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00401",
+  "pnr": "5ABXSA",
+  "flight_id": "AD1014",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Fort Lauderdale?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00539",
+  "pnr": "ZWT957",
+  "flight_id": "AD1808",
+  "channel": "email",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00710",
+  "pnr": "CWHVBT",
+  "flight_id": "AD1822",
+  "channel": "email",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1822.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00001",
+  "pnr": "C2WFSV",
+  "flight_id": "AD455",
+  "channel": "email",
+  "language": "en",
+  "text": "What's the checked bag allowance to Albany?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02389",
+  "pnr": "4ZR98G",
+  "flight_id": "AD1148",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1148.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01610",
+  "pnr": "3J6KWQ",
+  "flight_id": "AD1527",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01480",
+  "pnr": "4BKCYT",
+  "flight_id": "AD802",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Hancock?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01178",
+  "pnr": "Y6LM7B",
+  "flight_id": "AD764",
+  "channel": "sms",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00710",
+  "pnr": "CWHVBT",
+  "flight_id": "AD1822",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Bentonville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01811",
+  "pnr": "JMXPLP",
+  "flight_id": "AD539",
+  "channel": "email",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 539.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00888",
+  "pnr": "WL3Y7Y",
+  "flight_id": "AD928",
+  "channel": "chat",
+  "language": "en",
+  "text": "What's the checked bag allowance to Des Moines?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00463",
+  "pnr": "ZRDK5L",
+  "flight_id": "AD1288",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I change my seat on AD 1288?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01816",
+  "pnr": "MNEHPM",
+  "flight_id": "AD455",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02002",
+  "pnr": "FDMAEA",
+  "flight_id": "AD1678",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Louisville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02383",
+  "pnr": "THCJTB",
+  "flight_id": "AD1577",
+  "channel": "social",
+  "language": "en",
+  "text": "Is there wifi on AD 1577?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01571",
+  "pnr": "7D5572",
+  "flight_id": "AD764",
+  "channel": "app",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 764?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01040",
+  "pnr": "LDURBJ",
+  "flight_id": "AD1706",
+  "channel": "email",
+  "language": "en",
+  "text": "Is there wifi on AD 1706?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00213",
+  "pnr": "XLTL3L",
+  "flight_id": "AD1678",
+  "channel": "chat",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00799",
+  "pnr": "BCVLBF",
+  "flight_id": "AD438",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00054",
+  "pnr": "JH9D7G",
+  "flight_id": "AD1696",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1696.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01153",
+  "pnr": "3TBGVG",
+  "flight_id": "AD438",
+  "channel": "chat",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 438?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00344",
+  "pnr": "B9DG6E",
+  "flight_id": "AD1110",
+  "channel": "chat",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1110?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01812",
+  "pnr": "EFQRAV",
+  "flight_id": "AD638",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Boise?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00043",
+  "pnr": "QH48QV",
+  "flight_id": "AD1706",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Salt Lake City?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00182",
+  "pnr": "C4ZVLT",
+  "flight_id": "AD1397",
+  "channel": "sms",
+  "language": "en",
+  "text": "Is there wifi on AD 1397?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01307",
+  "pnr": "NPE2AZ",
+  "flight_id": "AD509",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 509?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01314",
+  "pnr": "QPHUVC",
+  "flight_id": "AD764",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 764?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01228",
+  "pnr": "FLFTUW",
+  "flight_id": "AD495",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I change my seat on AD 495?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01306",
+  "pnr": "9LBZ2C",
+  "flight_id": "AD887",
+  "channel": "email",
+  "language": "en",
+  "text": "Is there wifi on AD 887?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00545",
+  "pnr": "7683YN",
+  "flight_id": "AD1470",
+  "channel": "chat",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1470?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01040",
+  "pnr": "LDURBJ",
+  "flight_id": "AD1706",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I change my seat on AD 1706?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02037",
+  "pnr": "RL4BFY",
+  "flight_id": "AD438",
+  "channel": "chat",
+  "language": "en",
+  "text": "Is there wifi on AD 438?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02395",
+  "pnr": "E8AXGG",
+  "flight_id": "AD1077",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1077.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00733",
+  "pnr": "YQYQ7D",
+  "flight_id": "AD853",
+  "channel": "app",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 853?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00043",
+  "pnr": "QH48QV",
+  "flight_id": "AD1706",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 1706?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00387",
+  "pnr": "XJS4FD",
+  "flight_id": "AD427",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 427.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01743",
+  "pnr": "9LR435",
+  "flight_id": "AD1312",
+  "channel": "chat",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Miami?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02028",
+  "pnr": "5WLYH7",
+  "flight_id": "AD1730",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02266",
+  "pnr": "VS32GG",
+  "flight_id": "AD455",
+  "channel": "sms",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00370",
+  "pnr": "HEVR9U",
+  "flight_id": "AD1470",
+  "channel": "sms",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00781",
+  "pnr": "QWMXX6",
+  "flight_id": "AD1235",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Lexington KY?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01198",
+  "pnr": "7NP2TJ",
+  "flight_id": "AD1060",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Grand Rapids?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00345",
+  "pnr": "6NJW5P",
+  "flight_id": "AD1803",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Traverse City?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01054",
+  "pnr": "JYUVGN",
+  "flight_id": "AD655",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Buffalo?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01424",
+  "pnr": "ZEXCNB",
+  "flight_id": "AD1342",
+  "channel": "app",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1342?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00892",
+  "pnr": "6LA5Z2",
+  "flight_id": "AD721",
+  "channel": "chat",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Paris?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00624",
+  "pnr": "J93WCX",
+  "flight_id": "AD1675",
+  "channel": "chat",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1675.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00976",
+  "pnr": "P2UHFW",
+  "flight_id": "AD509",
+  "channel": "email",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Austin?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02030",
+  "pnr": "FJ9SMW",
+  "flight_id": "AD745",
+  "channel": "social",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 745?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01338",
+  "pnr": "ME5CGJ",
+  "flight_id": "AD1678",
+  "channel": "sms",
+  "language": "en",
+  "text": "Is there wifi on AD 1678?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02037",
+  "pnr": "RL4BFY",
+  "flight_id": "AD438",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02132",
+  "pnr": "RCXV6N",
+  "flight_id": "AD1144",
+  "channel": "email",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01719",
+  "pnr": "MMZ2UG",
+  "flight_id": "AD427",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01816",
+  "pnr": "MNEHPM",
+  "flight_id": "AD455",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00265",
+  "pnr": "XRSQLT",
+  "flight_id": "AD1124",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 1124?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00001",
+  "pnr": "C2WFSV",
+  "flight_id": "AD455",
+  "channel": "app",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 455?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01718",
+  "pnr": "W8TZG3",
+  "flight_id": "AD427",
+  "channel": "app",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 427?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01322",
+  "pnr": "D4UT5T",
+  "flight_id": "AD1696",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01531",
+  "pnr": "H6KNRM",
+  "flight_id": "AD1144",
+  "channel": "sms",
+  "language": "en",
+  "text": "Is there wifi on AD 1144?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00049",
+  "pnr": "N5LGYG",
+  "flight_id": "AD1678",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Louisville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00418",
+  "pnr": "3RTZAU",
+  "flight_id": "AD1264",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1264.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00545",
+  "pnr": "7683YN",
+  "flight_id": "AD1470",
+  "channel": "email",
+  "language": "en",
+  "text": "Do you have vegetarian meals to PADUCAH?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00308",
+  "pnr": "VEJSAQ",
+  "flight_id": "AD670",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00601",
+  "pnr": "NLZAXB",
+  "flight_id": "AD745",
+  "channel": "email",
+  "language": "en",
+  "text": "What's the checked bag allowance to Cleveland?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00292",
+  "pnr": "CUWAUS",
+  "flight_id": "AD1243",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I change my seat on AD 1243?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01841",
+  "pnr": "RFKBZ3",
+  "flight_id": "AD539",
+  "channel": "social",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Asheville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01339",
+  "pnr": "FUJP6E",
+  "flight_id": "AD1342",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00773",
+  "pnr": "8ZTZJT",
+  "flight_id": "AD802",
+  "channel": "email",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01793",
+  "pnr": "NTG3D8",
+  "flight_id": "AD1312",
+  "channel": "email",
+  "language": "en",
+  "text": "What's the checked bag allowance to Miami?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00815",
+  "pnr": "ZL5FUG",
+  "flight_id": "AD638",
+  "channel": "chat",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 638?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01385",
+  "pnr": "N43ZBV",
+  "flight_id": "AD1725",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 1725?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00599",
+  "pnr": "ZJY7FZ",
+  "flight_id": "AD1397",
+  "channel": "chat",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1397.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00056",
+  "pnr": "HJTE3Z",
+  "flight_id": "AD1219",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 1219?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01996",
+  "pnr": "DPF84V",
+  "flight_id": "AD764",
+  "channel": "email",
+  "language": "en",
+  "text": "Is there wifi on AD 764?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02092",
+  "pnr": "EEARDH",
+  "flight_id": "AD1148",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 1148?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00438",
+  "pnr": "MTSD7Y",
+  "flight_id": "AD1288",
+  "channel": "chat",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Harrisburg?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01723",
+  "pnr": "Y8VP7S",
+  "flight_id": "AD1288",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Harrisburg?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00026",
+  "pnr": "WQRRC4",
+  "flight_id": "AD948",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 948?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02110",
+  "pnr": "CCNTJP",
+  "flight_id": "AD1696",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 1696?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01099",
+  "pnr": "P4G4P7",
+  "flight_id": "AD1219",
+  "channel": "app",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1219?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01816",
+  "pnr": "MNEHPM",
+  "flight_id": "AD455",
+  "channel": "email",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 455.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02266",
+  "pnr": "VS32GG",
+  "flight_id": "AD455",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Albany?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00545",
+  "pnr": "7683YN",
+  "flight_id": "AD1470",
+  "channel": "app",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00805",
+  "pnr": "YKS4X2",
+  "flight_id": "AD914",
+  "channel": "sms",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 914.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00391",
+  "pnr": "SF5VXD",
+  "flight_id": "AD928",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01781",
+  "pnr": "52SX9C",
+  "flight_id": "AD1110",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to White Plains?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01563",
+  "pnr": "B9YRC7",
+  "flight_id": "AD1322",
+  "channel": "chat",
+  "language": "en",
+  "text": "Is there wifi on AD 1322?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00105",
+  "pnr": "AYRAH4",
+  "flight_id": "AD1110",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00202",
+  "pnr": "8228X6",
+  "flight_id": "AD1417",
+  "channel": "email",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Kahului?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00640",
+  "pnr": "GKS8RH",
+  "flight_id": "AD1577",
+  "channel": "social",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02077",
+  "pnr": "U79YK5",
+  "flight_id": "AD701",
+  "channel": "social",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Columbia?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02077",
+  "pnr": "U79YK5",
+  "flight_id": "AD701",
+  "channel": "email",
+  "language": "en",
+  "text": "What's the checked bag allowance to Columbia?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00781",
+  "pnr": "QWMXX6",
+  "flight_id": "AD1235",
+  "channel": "app",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00222",
+  "pnr": "C88QMQ",
+  "flight_id": "AD1219",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Los Angeles?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01400",
+  "pnr": "E98Z86",
+  "flight_id": "AD1696",
+  "channel": "social",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00620",
+  "pnr": "6H7N6P",
+  "flight_id": "AD1204",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Jacksonville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00942",
+  "pnr": "G5L24F",
+  "flight_id": "AD1243",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to New York?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01228",
+  "pnr": "FLFTUW",
+  "flight_id": "AD495",
+  "channel": "email",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01108",
+  "pnr": "5SUBWL",
+  "flight_id": "AD1589",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Richmond?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00545",
+  "pnr": "7683YN",
+  "flight_id": "AD1470",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I change my seat on AD 1470?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01519",
+  "pnr": "F2KDRM",
+  "flight_id": "AD638",
+  "channel": "chat",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Boise?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00074",
+  "pnr": "3MXDVZ",
+  "flight_id": "AD1706",
+  "channel": "chat",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1706?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01136",
+  "pnr": "8PF69Q",
+  "flight_id": "AD840",
+  "channel": "app",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01859",
+  "pnr": "JC5A8B",
+  "flight_id": "AD1124",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 1124?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01426",
+  "pnr": "4BUJBN",
+  "flight_id": "AD1148",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Washington?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00210",
+  "pnr": "645LTM",
+  "flight_id": "AD853",
+  "channel": "social",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00690",
+  "pnr": "KNZRZU",
+  "flight_id": "AD1288",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02395",
+  "pnr": "E8AXGG",
+  "flight_id": "AD1077",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I change my seat on AD 1077?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01332",
+  "pnr": "VVHMRW",
+  "flight_id": "AD1288",
+  "channel": "app",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1288?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01928",
+  "pnr": "ALZMYC",
+  "flight_id": "AD1322",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Milwaukee?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00105",
+  "pnr": "AYRAH4",
+  "flight_id": "AD1110",
+  "channel": "social",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00127",
+  "pnr": "6GG7TN",
+  "flight_id": "AD1822",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Bentonville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01211",
+  "pnr": "RJCC8E",
+  "flight_id": "AD509",
+  "channel": "email",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Austin?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00266",
+  "pnr": "JP6YEV",
+  "flight_id": "AD1803",
+  "channel": "app",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00344",
+  "pnr": "B9DG6E",
+  "flight_id": "AD1110",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I change my seat on AD 1110?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00198",
+  "pnr": "6RMVFY",
+  "flight_id": "AD701",
+  "channel": "email",
+  "language": "en",
+  "text": "What's the checked bag allowance to Columbia?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01971",
+  "pnr": "9LJT7G",
+  "flight_id": "AD1301",
+  "channel": "email",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1301?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00222",
+  "pnr": "C88QMQ",
+  "flight_id": "AD1219",
+  "channel": "email",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00549",
+  "pnr": "MVSFVP",
+  "flight_id": "AD829",
+  "channel": "social",
+  "language": "en",
+  "text": "Can I change my seat on AD 829?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01948",
+  "pnr": "VW2N97",
+  "flight_id": "AD1208",
+  "channel": "sms",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Lansing?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01985",
+  "pnr": "9WBM24",
+  "flight_id": "AD1552",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Portland?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00308",
+  "pnr": "VEJSAQ",
+  "flight_id": "AD670",
+  "channel": "chat",
+  "language": "en",
+  "text": "What's the checked bag allowance to Buffalo?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01546",
+  "pnr": "7BAQU3",
+  "flight_id": "AD1235",
+  "channel": "sms",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01241",
+  "pnr": "FAPDAE",
+  "flight_id": "AD1110",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to White Plains?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01717",
+  "pnr": "3S8SZZ",
+  "flight_id": "AD1433",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00594",
+  "pnr": "YBF86L",
+  "flight_id": "AD655",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Buffalo?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02028",
+  "pnr": "5WLYH7",
+  "flight_id": "AD1730",
+  "channel": "chat",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1730.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00800",
+  "pnr": "6RQ5BB",
+  "flight_id": "AD1808",
+  "channel": "chat",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00556",
+  "pnr": "NHDHPS",
+  "flight_id": "AD472",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00308",
+  "pnr": "VEJSAQ",
+  "flight_id": "AD670",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Buffalo?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01859",
+  "pnr": "JC5A8B",
+  "flight_id": "AD1124",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to White Plains?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01425",
+  "pnr": "JSQ69K",
+  "flight_id": "AD772",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Columbus?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01227",
+  "pnr": "BYLCYE",
+  "flight_id": "AD1552",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 1552?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01582",
+  "pnr": "NNT5XC",
+  "flight_id": "AD1172",
+  "channel": "chat",
+  "language": "en",
+  "text": "What's the checked bag allowance to Indianapolis?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02110",
+  "pnr": "CCNTJP",
+  "flight_id": "AD1696",
+  "channel": "app",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1696?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00531",
+  "pnr": "EKA8XJ",
+  "flight_id": "AD887",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01178",
+  "pnr": "Y6LM7B",
+  "flight_id": "AD764",
+  "channel": "social",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Columbus?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00969",
+  "pnr": "2PVV5J",
+  "flight_id": "AD1651",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02347",
+  "pnr": "TVG8CA",
+  "flight_id": "AD1098",
+  "channel": "sms",
+  "language": "en",
+  "text": "Is there wifi on AD 1098?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00227",
+  "pnr": "EAZGJN",
+  "flight_id": "AD1433",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Oklahoma City?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01928",
+  "pnr": "ALZMYC",
+  "flight_id": "AD1322",
+  "channel": "app",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01211",
+  "pnr": "RJCC8E",
+  "flight_id": "AD509",
+  "channel": "email",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 509?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02335",
+  "pnr": "UDNCM8",
+  "flight_id": "AD1274",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Orlando?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00773",
+  "pnr": "8ZTZJT",
+  "flight_id": "AD802",
+  "channel": "social",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02030",
+  "pnr": "FJ9SMW",
+  "flight_id": "AD745",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 745?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00996",
+  "pnr": "VYFJJE",
+  "flight_id": "AD495",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Appleton?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00587",
+  "pnr": "WCKCRA",
+  "flight_id": "AD1527",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Pensacola?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00511",
+  "pnr": "BQMYXG",
+  "flight_id": "AD1264",
+  "channel": "email",
+  "language": "en",
+  "text": "What's the checked bag allowance to Saginaw?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00256",
+  "pnr": "9WFZCZ",
+  "flight_id": "AD1301",
+  "channel": "chat",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00252",
+  "pnr": "SG9QZ5",
+  "flight_id": "AD959",
+  "channel": "chat",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 959.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00198",
+  "pnr": "6RMVFY",
+  "flight_id": "AD701",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00647",
+  "pnr": "8L5A95",
+  "flight_id": "AD1110",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I get on an earlier flight to White Plains?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00516",
+  "pnr": "M52NFH",
+  "flight_id": "AD840",
+  "channel": "chat",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Cincinnati?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01775",
+  "pnr": "MZMQR6",
+  "flight_id": "AD1312",
+  "channel": "chat",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1312?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01037",
+  "pnr": "BSN8LQ",
+  "flight_id": "AD1577",
+  "channel": "chat",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01811",
+  "pnr": "JMXPLP",
+  "flight_id": "AD539",
+  "channel": "email",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00401",
+  "pnr": "5ABXSA",
+  "flight_id": "AD1014",
+  "channel": "sms",
+  "language": "en",
+  "text": "What's the checked bag allowance to Fort Lauderdale?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00074",
+  "pnr": "3MXDVZ",
+  "flight_id": "AD1706",
+  "channel": "app",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01694",
+  "pnr": "U7UTQU",
+  "flight_id": "AD1565",
+  "channel": "email",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1565?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00731",
+  "pnr": "FKTWP4",
+  "flight_id": "AD1678",
+  "channel": "chat",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1678?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02383",
+  "pnr": "THCJTB",
+  "flight_id": "AD1577",
+  "channel": "chat",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00594",
+  "pnr": "YBF86L",
+  "flight_id": "AD655",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I change my seat on AD 655?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00565",
+  "pnr": "NZNRK4",
+  "flight_id": "AD1288",
+  "channel": "email",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Harrisburg?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00697",
+  "pnr": "F7EWDG",
+  "flight_id": "AD764",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I change my seat on AD 764?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02347",
+  "pnr": "TVG8CA",
+  "flight_id": "AD1098",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01495",
+  "pnr": "FDVNAG",
+  "flight_id": "AD1552",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Portland?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01723",
+  "pnr": "Y8VP7S",
+  "flight_id": "AD1288",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01237",
+  "pnr": "QRZ3XQ",
+  "flight_id": "AD1026",
+  "channel": "email",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1026?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02062",
+  "pnr": "7KT8C8",
+  "flight_id": "AD455",
+  "channel": "chat",
+  "language": "en",
+  "text": "What's the checked bag allowance to Albany?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00311",
+  "pnr": "2UZH4E",
+  "flight_id": "AD1098",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Honolulu?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01385",
+  "pnr": "N43ZBV",
+  "flight_id": "AD1725",
+  "channel": "email",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01162",
+  "pnr": "Q3FGFQ",
+  "flight_id": "AD1219",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1219.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02077",
+  "pnr": "U79YK5",
+  "flight_id": "AD701",
+  "channel": "social",
+  "language": "en",
+  "text": "What's the checked bag allowance to Columbia?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00001",
+  "pnr": "C2WFSV",
+  "flight_id": "AD455",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Albany?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00469",
+  "pnr": "TY7P2M",
+  "flight_id": "AD1589",
+  "channel": "chat",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Richmond?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01275",
+  "pnr": "M2ESVU",
+  "flight_id": "AD853",
+  "channel": "chat",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 853.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01330",
+  "pnr": "725EKB",
+  "flight_id": "AD772",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I change my seat on AD 772?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01531",
+  "pnr": "H6KNRM",
+  "flight_id": "AD1144",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 1144?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02214",
+  "pnr": "6C86VT",
+  "flight_id": "AD472",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Anchorage?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01491",
+  "pnr": "TTSD7W",
+  "flight_id": "AD539",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 539?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01322",
+  "pnr": "D4UT5T",
+  "flight_id": "AD1696",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 1696?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01429",
+  "pnr": "4NGBFE",
+  "flight_id": "AD472",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 472?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02259",
+  "pnr": "JBDBBZ",
+  "flight_id": "AD721",
+  "channel": "email",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 721.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01841",
+  "pnr": "RFKBZ3",
+  "flight_id": "AD539",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 539?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01338",
+  "pnr": "ME5CGJ",
+  "flight_id": "AD1678",
+  "channel": "email",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Louisville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00897",
+  "pnr": "SHVRKP",
+  "flight_id": "AD1552",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 1552?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00800",
+  "pnr": "6RQ5BB",
+  "flight_id": "AD1808",
+  "channel": "email",
+  "language": "en",
+  "text": "What's the checked bag allowance to Knoxville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00292",
+  "pnr": "CUWAUS",
+  "flight_id": "AD1243",
+  "channel": "chat",
+  "language": "en",
+  "text": "Do you have vegetarian meals to New York?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01694",
+  "pnr": "U7UTQU",
+  "flight_id": "AD1565",
+  "channel": "social",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00887",
+  "pnr": "5TH4U4",
+  "flight_id": "AD764",
+  "channel": "sms",
+  "language": "en",
+  "text": "Can I change my seat on AD 764?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00050",
+  "pnr": "FQMPNF",
+  "flight_id": "AD1527",
+  "channel": "email",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1527?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01864",
+  "pnr": "338F2K",
+  "flight_id": "AD1148",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Washington?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00265",
+  "pnr": "XRSQLT",
+  "flight_id": "AD1124",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 1124?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00440",
+  "pnr": "25P5CM",
+  "flight_id": "AD1417",
+  "channel": "email",
+  "language": "en",
+  "text": "What's the checked bag allowance to Kahului?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00302",
+  "pnr": "WFY38B",
+  "flight_id": "AD887",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Washington?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00887",
+  "pnr": "5TH4U4",
+  "flight_id": "AD764",
+  "channel": "social",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 764?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01150",
+  "pnr": "T333Z7",
+  "flight_id": "AD509",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01395",
+  "pnr": "EXJ9NC",
+  "flight_id": "AD472",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 472?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00620",
+  "pnr": "6H7N6P",
+  "flight_id": "AD1204",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 1204?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00069",
+  "pnr": "6VD7B4",
+  "flight_id": "AD1803",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02337",
+  "pnr": "FD5EF9",
+  "flight_id": "AD701",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Columbia?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01182",
+  "pnr": "E7EBVH",
+  "flight_id": "AD1077",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00283",
+  "pnr": "27R87U",
+  "flight_id": "AD1696",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to San Francisco?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01749",
+  "pnr": "G3E9XP",
+  "flight_id": "AD685",
+  "channel": "email",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02110",
+  "pnr": "CCNTJP",
+  "flight_id": "AD1696",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to San Francisco?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01841",
+  "pnr": "RFKBZ3",
+  "flight_id": "AD539",
+  "channel": "social",
+  "language": "en",
+  "text": "Is there wifi on AD 539?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02063",
+  "pnr": "VZJAKG",
+  "flight_id": "AD638",
+  "channel": "chat",
+  "language": "en",
+  "text": "What's the checked bag allowance to Boise?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01562",
+  "pnr": "FFMY43",
+  "flight_id": "AD539",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Asheville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01277",
+  "pnr": "KS62HC",
+  "flight_id": "AD455",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Albany?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00800",
+  "pnr": "6RQ5BB",
+  "flight_id": "AD1808",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 1808?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01540",
+  "pnr": "WHM4U4",
+  "flight_id": "AD1144",
+  "channel": "chat",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00539",
+  "pnr": "ZWT957",
+  "flight_id": "AD1808",
+  "channel": "sms",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1808.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00309",
+  "pnr": "C33HUQ",
+  "flight_id": "AD1706",
+  "channel": "chat",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00773",
+  "pnr": "8ZTZJT",
+  "flight_id": "AD802",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 802?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00043",
+  "pnr": "QH48QV",
+  "flight_id": "AD1706",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 1706?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00159",
+  "pnr": "FNSB64",
+  "flight_id": "AD1730",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01229",
+  "pnr": "UH3TQ3",
+  "flight_id": "AD914",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Duluth?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00976",
+  "pnr": "P2UHFW",
+  "flight_id": "AD509",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Austin?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01894",
+  "pnr": "VUXQAX",
+  "flight_id": "AD495",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Appleton?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02179",
+  "pnr": "Y6WV24",
+  "flight_id": "AD670",
+  "channel": "chat",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01254",
+  "pnr": "B967QM",
+  "flight_id": "AD986",
+  "channel": "email",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 986.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00868",
+  "pnr": "WD4V5C",
+  "flight_id": "AD1651",
+  "channel": "chat",
+  "language": "en",
+  "text": "What's the checked bag allowance to San Antonio?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00888",
+  "pnr": "WL3Y7Y",
+  "flight_id": "AD928",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01228",
+  "pnr": "FLFTUW",
+  "flight_id": "AD495",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Appleton?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00780",
+  "pnr": "54YCXH",
+  "flight_id": "AD1781",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Tampa?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01964",
+  "pnr": "RPCKJQ",
+  "flight_id": "AD1470",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00174",
+  "pnr": "EQUR89",
+  "flight_id": "AD1172",
+  "channel": "email",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00897",
+  "pnr": "SHVRKP",
+  "flight_id": "AD1552",
+  "channel": "sms",
+  "language": "en",
+  "text": "Is there wifi on AD 1552?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00815",
+  "pnr": "ZL5FUG",
+  "flight_id": "AD638",
+  "channel": "email",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 638?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00674",
+  "pnr": "SZM7XR",
+  "flight_id": "AD1077",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Greensboro?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00133",
+  "pnr": "K8K4XZ",
+  "flight_id": "AD764",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Columbus?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01745",
+  "pnr": "8XS5UV",
+  "flight_id": "AD1808",
+  "channel": "chat",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1808.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00967",
+  "pnr": "QR76PD",
+  "flight_id": "AD1274",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Orlando?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02232",
+  "pnr": "4FPZ7U",
+  "flight_id": "AD887",
+  "channel": "chat",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00574",
+  "pnr": "RA6D26",
+  "flight_id": "AD1417",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01016",
+  "pnr": "GYFKRF",
+  "flight_id": "AD1565",
+  "channel": "social",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Portland?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02059",
+  "pnr": "8QHZMV",
+  "flight_id": "AD959",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Eau Claire?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00633",
+  "pnr": "GFH5LE",
+  "flight_id": "AD1651",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to San Antonio?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01949",
+  "pnr": "D9YTNN",
+  "flight_id": "AD1470",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00695",
+  "pnr": "859G5C",
+  "flight_id": "AD1651",
+  "channel": "sms",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01571",
+  "pnr": "7D5572",
+  "flight_id": "AD764",
+  "channel": "email",
+  "language": "en",
+  "text": "Is there wifi on AD 764?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01241",
+  "pnr": "FAPDAE",
+  "flight_id": "AD1110",
+  "channel": "social",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02186",
+  "pnr": "7A5VW5",
+  "flight_id": "AD1725",
+  "channel": "sms",
+  "language": "en",
+  "text": "Can I change my seat on AD 1725?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00948",
+  "pnr": "7CGSHZ",
+  "flight_id": "AD1417",
+  "channel": "social",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01273",
+  "pnr": "BGMJR2",
+  "flight_id": "AD840",
+  "channel": "social",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01928",
+  "pnr": "ALZMYC",
+  "flight_id": "AD1322",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1322.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00658",
+  "pnr": "TMBECP",
+  "flight_id": "AD1243",
+  "channel": "app",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01914",
+  "pnr": "56X58E",
+  "flight_id": "AD1204",
+  "channel": "app",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02335",
+  "pnr": "UDNCM8",
+  "flight_id": "AD1274",
+  "channel": "email",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01145",
+  "pnr": "SAMVTF",
+  "flight_id": "AD1026",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Sioux Falls?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01010",
+  "pnr": "SGSUEP",
+  "flight_id": "AD1148",
+  "channel": "sms",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1148.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00800",
+  "pnr": "6RQ5BB",
+  "flight_id": "AD1808",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Knoxville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01229",
+  "pnr": "UH3TQ3",
+  "flight_id": "AD914",
+  "channel": "email",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01064",
+  "pnr": "GA2X3V",
+  "flight_id": "AD840",
+  "channel": "chat",
+  "language": "en",
+  "text": "What's the checked bag allowance to Cincinnati?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00500",
+  "pnr": "KETH35",
+  "flight_id": "AD959",
+  "channel": "email",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 959?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01467",
+  "pnr": "34NY6P",
+  "flight_id": "AD1312",
+  "channel": "email",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1312.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01295",
+  "pnr": "7S7MXV",
+  "flight_id": "AD1696",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 1696?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00856",
+  "pnr": "E69BKK",
+  "flight_id": "AD1144",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I change my seat on AD 1144?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01949",
+  "pnr": "D9YTNN",
+  "flight_id": "AD1470",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to PADUCAH?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00483",
+  "pnr": "W8NDM4",
+  "flight_id": "AD1148",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Washington?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00265",
+  "pnr": "XRSQLT",
+  "flight_id": "AD1124",
+  "channel": "email",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1124.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01918",
+  "pnr": "56F447",
+  "flight_id": "AD1204",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Jacksonville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01914",
+  "pnr": "56X58E",
+  "flight_id": "AD1204",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Jacksonville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00034",
+  "pnr": "B7Q9LV",
+  "flight_id": "AD745",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 745?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00805",
+  "pnr": "YKS4X2",
+  "flight_id": "AD914",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 914?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01426",
+  "pnr": "4BUJBN",
+  "flight_id": "AD1148",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1148.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01539",
+  "pnr": "XCXQDM",
+  "flight_id": "AD685",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 685?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00539",
+  "pnr": "ZWT957",
+  "flight_id": "AD1808",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 1808?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00312",
+  "pnr": "75N5M6",
+  "flight_id": "AD670",
+  "channel": "chat",
+  "language": "en",
+  "text": "Is there wifi on AD 670?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01237",
+  "pnr": "QRZ3XQ",
+  "flight_id": "AD1026",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01145",
+  "pnr": "SAMVTF",
+  "flight_id": "AD1026",
+  "channel": "email",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02188",
+  "pnr": "QBGSYP",
+  "flight_id": "AD1060",
+  "channel": "email",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1060?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01886",
+  "pnr": "RLBLF7",
+  "flight_id": "AD455",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Albany?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00601",
+  "pnr": "NLZAXB",
+  "flight_id": "AD745",
+  "channel": "chat",
+  "language": "en",
+  "text": "What's the checked bag allowance to Cleveland?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01145",
+  "pnr": "SAMVTF",
+  "flight_id": "AD1026",
+  "channel": "chat",
+  "language": "en",
+  "text": "What's the checked bag allowance to Sioux Falls?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00030",
+  "pnr": "M7LBAV",
+  "flight_id": "AD1271",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 1271?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00805",
+  "pnr": "YKS4X2",
+  "flight_id": "AD914",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01829",
+  "pnr": "GQZU74",
+  "flight_id": "AD1383",
+  "channel": "email",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1383?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00667",
+  "pnr": "EF9UBY",
+  "flight_id": "AD1235",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1235.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01348",
+  "pnr": "S5422W",
+  "flight_id": "AD1397",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to New Orleans?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00049",
+  "pnr": "N5LGYG",
+  "flight_id": "AD1678",
+  "channel": "social",
+  "language": "en",
+  "text": "Is there wifi on AD 1678?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00969",
+  "pnr": "2PVV5J",
+  "flight_id": "AD1651",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1651.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00198",
+  "pnr": "6RMVFY",
+  "flight_id": "AD701",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Columbia?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01908",
+  "pnr": "WWNZCG",
+  "flight_id": "AD638",
+  "channel": "chat",
+  "language": "en",
+  "text": "Is there wifi on AD 638?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01170",
+  "pnr": "ZDY55G",
+  "flight_id": "AD1219",
+  "channel": "chat",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1219.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00252",
+  "pnr": "SG9QZ5",
+  "flight_id": "AD959",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Eau Claire?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00074",
+  "pnr": "3MXDVZ",
+  "flight_id": "AD1706",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00069",
+  "pnr": "6VD7B4",
+  "flight_id": "AD1803",
+  "channel": "chat",
+  "language": "en",
+  "text": "Is there wifi on AD 1803?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00823",
+  "pnr": "WELDAW",
+  "flight_id": "AD1288",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01772",
+  "pnr": "ALZK7J",
+  "flight_id": "AD1026",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00574",
+  "pnr": "RA6D26",
+  "flight_id": "AD1417",
+  "channel": "email",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1417.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00781",
+  "pnr": "QWMXX6",
+  "flight_id": "AD1235",
+  "channel": "email",
+  "language": "en",
+  "text": "Is there wifi on AD 1235?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02337",
+  "pnr": "FD5EF9",
+  "flight_id": "AD701",
+  "channel": "email",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01998",
+  "pnr": "3PMAEE",
+  "flight_id": "AD772",
+  "channel": "chat",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 772?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01696",
+  "pnr": "E8428Z",
+  "flight_id": "AD1397",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02395",
+  "pnr": "E8AXGG",
+  "flight_id": "AD1077",
+  "channel": "chat",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02065",
+  "pnr": "P2LPGS",
+  "flight_id": "AD1552",
+  "channel": "chat",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01864",
+  "pnr": "338F2K",
+  "flight_id": "AD1148",
+  "channel": "sms",
+  "language": "en",
+  "text": "Is there wifi on AD 1148?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00560",
+  "pnr": "NSKX9A",
+  "flight_id": "AD1288",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1288.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01682",
+  "pnr": "A4VSNV",
+  "flight_id": "AD655",
+  "channel": "app",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00756",
+  "pnr": "Y9DL4K",
+  "flight_id": "AD1124",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I get on an earlier flight to White Plains?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00182",
+  "pnr": "C4ZVLT",
+  "flight_id": "AD1397",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to New Orleans?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00049",
+  "pnr": "N5LGYG",
+  "flight_id": "AD1678",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Louisville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02030",
+  "pnr": "FJ9SMW",
+  "flight_id": "AD745",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Cleveland?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01295",
+  "pnr": "7S7MXV",
+  "flight_id": "AD1696",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to San Francisco?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00285",
+  "pnr": "3PE8UZ",
+  "flight_id": "AD685",
+  "channel": "email",
+  "language": "en",
+  "text": "What's the checked bag allowance to Baltimore?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01720",
+  "pnr": "7C2SJR",
+  "flight_id": "AD1433",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00069",
+  "pnr": "6VD7B4",
+  "flight_id": "AD1803",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00979",
+  "pnr": "ARTEY2",
+  "flight_id": "AD959",
+  "channel": "social",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Eau Claire?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00161",
+  "pnr": "XTHC93",
+  "flight_id": "AD721",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 721.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01985",
+  "pnr": "9WBM24",
+  "flight_id": "AD1552",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Portland?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00299",
+  "pnr": "2M4HGV",
+  "flight_id": "AD1098",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 1098?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01220",
+  "pnr": "426VES",
+  "flight_id": "AD1098",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1098.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01309",
+  "pnr": "XJJ3JE",
+  "flight_id": "AD1730",
+  "channel": "sms",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1730?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01898",
+  "pnr": "CQ89U6",
+  "flight_id": "AD959",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Eau Claire?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00674",
+  "pnr": "SZM7XR",
+  "flight_id": "AD1077",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00207",
+  "pnr": "5W74CR",
+  "flight_id": "AD1124",
+  "channel": "email",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00105",
+  "pnr": "AYRAH4",
+  "flight_id": "AD1110",
+  "channel": "chat",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01925",
+  "pnr": "KV233E",
+  "flight_id": "AD1527",
+  "channel": "app",
+  "language": "en",
+  "text": "What's the checked bag allowance to Pensacola?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00202",
+  "pnr": "8228X6",
+  "flight_id": "AD1417",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02023",
+  "pnr": "HY6NXR",
+  "flight_id": "AD1243",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to New York?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02216",
+  "pnr": "EKR2YW",
+  "flight_id": "AD1219",
+  "channel": "chat",
+  "language": "en",
+  "text": "Is there wifi on AD 1219?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00969",
+  "pnr": "2PVV5J",
+  "flight_id": "AD1651",
+  "channel": "chat",
+  "language": "en",
+  "text": "Can I get on an earlier flight to San Antonio?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01616",
+  "pnr": "CNK85L",
+  "flight_id": "AD455",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I change my seat on AD 455?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01234",
+  "pnr": "5SJGZE",
+  "flight_id": "AD1397",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 1397?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01985",
+  "pnr": "9WBM24",
+  "flight_id": "AD1552",
+  "channel": "email",
+  "language": "en",
+  "text": "Is there wifi on AD 1552?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01756",
+  "pnr": "GRU2FM",
+  "flight_id": "AD1204",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Jacksonville?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00340",
+  "pnr": "ULURW8",
+  "flight_id": "AD1098",
+  "channel": "email",
+  "language": "en",
+  "text": "Can I get on an earlier flight to Honolulu?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00481",
+  "pnr": "ESH4Y9",
+  "flight_id": "AD1565",
+  "channel": "email",
+  "language": "en",
+  "text": "My miles didn't post from last week's trip.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00781",
+  "pnr": "QWMXX6",
+  "flight_id": "AD1235",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Lexington KY?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00469",
+  "pnr": "TY7P2M",
+  "flight_id": "AD1589",
+  "channel": "email",
+  "language": "en",
+  "text": "What's the checked bag allowance to Richmond?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00245",
+  "pnr": "DF68L9",
+  "flight_id": "AD1397",
+  "channel": "email",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1397?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00910",
+  "pnr": "6EWL7T",
+  "flight_id": "AD1589",
+  "channel": "chat",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1589.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01719",
+  "pnr": "MMZ2UG",
+  "flight_id": "AD427",
+  "channel": "app",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 427?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00524",
+  "pnr": "AJHZ8T",
+  "flight_id": "AD1148",
+  "channel": "app",
+  "language": "en",
+  "text": "Do you have vegetarian meals to Washington?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01587",
+  "pnr": "ZQZ46Y",
+  "flight_id": "AD438",
+  "channel": "app",
+  "language": "en",
+  "text": "Is there wifi on AD 438?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02266",
+  "pnr": "VS32GG",
+  "flight_id": "AD455",
+  "channel": "chat",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 455?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_01157",
+  "pnr": "89XPBW",
+  "flight_id": "AD840",
+  "channel": "app",
+  "language": "en",
+  "text": "Can I bring a stroller on board?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00213",
+  "pnr": "XLTL3L",
+  "flight_id": "AD1678",
+  "channel": "app",
+  "language": "en",
+  "text": "I'd like to upgrade to business on AD 1678.",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_02147",
+  "pnr": "YV257Q",
+  "flight_id": "AD1552",
+  "channel": "app",
+  "language": "en",
+  "text": "How do I add my Known Traveler Number?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ },
+ {
+  "passenger_id": "pax_00831",
+  "pnr": "XLMCTQ",
+  "flight_id": "AD1219",
+  "channel": "app",
+  "language": "en",
+  "text": "How early should I get to O'Hare for AD 1219?",
+  "hero": false,
+  "expected": {
+   "escalate": false
+  }
+ }
+]

@@ -1,0 +1,89 @@
+.map-event { display:flex; flex-direction:column; gap:3px; margin-top:14px; min-height:66px; padding:10px 12px; border-left:3px solid #789AAA; background:var(--surface-subtle); border-radius:0 8px 8px 0; }
+.map-event strong { font-size:14px; font-weight:600; }
+.map-event span { font-size:13px; color:var(--text-muted); }
+.map-event[data-kind=failure] { border-color:#B7752B; }
+.flight-map .map-route.cancelled { stroke:#C54742; stroke-dasharray:3 6; opacity:.65; }
+.flight-map .map-route.held { stroke:#999; stroke-dasharray:2 6; }
+.route-cancel circle { fill:#B32727; stroke:var(--surface-card); stroke-width:2; }
+.route-cancel path { stroke:#fff; stroke-width:2; stroke-linecap:round; }
+.route-cancel { animation:cancel-arrive .35s ease-out both; }
+.flight-map text.flight-number { font-size:12px; fill:var(--text-muted); }
+.route-held path { stroke:#8C7651; stroke-width:3; stroke-linecap:round; }
+.weather-cloud { fill:#D6DCE0; stroke:#8897A2; stroke-width:1; }
+.weather-bolt { fill:#AD641A; }
+.weather-rain path { stroke:#547D91; stroke-width:2; stroke-linecap:round; }
+.weather-rain { animation:weather-drift 1s linear 4; }
+.replacement-route path { fill:none; stroke:#547D91; stroke-width:3; stroke-dasharray:6 5; animation:proposal-trace 1.5s linear 3; }
+.flight-map .replacement-route text { fill:#436579; font-size:13px; font-weight:600; }
+.lookup-failure rect { fill:#FFF0DA; stroke:#B7752B; }
+.flight-map .lookup-failure text { fill:#723D0F; font-size:13px; }
+.flight-outcomes { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:12px 0; }
+.flight-outcomes > div { border:1px solid var(--border-subtle); border-radius:8px; padding:10px 12px; min-width:0; background:var(--surface-card); }
+.flight-outcomes strong { display:flex; justify-content:space-between; gap:6px; font-size:14px; font-weight:500; }
+.flight-outcomes strong span { color:var(--text-muted); font-size:12px; }
+.flight-outcomes > div > span { display:block; font-size:13px; line-height:1.5; margin-top:4px; color:var(--text-muted); }
+.flight-outcomes [data-state=failure] { border-color:#B7752B; }
+.flight-outcomes [data-state=offer] { border-color:#789AAA; }
+[data-theme=dark] .flight-map .replacement-route text { fill:#A9C6D5; }
+[data-theme=dark] .replacement-route path { stroke:#A9C6D5; }
+.map-stopped *, .map-stopped .map-plane { animation-play-state:paused !important; }
+@keyframes cancel-arrive { from { opacity:0; } to { opacity:1; } }
+@keyframes proposal-trace { to { stroke-dashoffset:-22; } }
+@keyframes weather-drift { from { transform:translateY(-2px);opacity:.3; } to { transform:translateY(4px);opacity:1; } }
+@media(max-width:600px) { .flight-outcomes { gap:8px; } .flight-outcomes > div { padding:10px; } .map-event { min-height:86px; } .flight-map .flight-number { font-size:14px; } }
+@media(prefers-reduced-motion:reduce) { .flight-map *, .flight-map .map-plane { animation:none !important; } }
+
+[data-theme=dark] .flight-map .lookup-failure text { fill:#723D0F; }
+@media(max-width:600px) { .flight-map text.flight-number { font-size:17px; } .flight-map .lookup-failure text,.flight-map .replacement-route text { font-size:16px; } }
+.map-request-target { cursor:pointer; }
+.map-request-target > rect { fill:transparent; stroke:transparent; stroke-width:2; }
+.map-request-target:hover > rect, .map-request-target:focus-visible > rect { stroke:#547D91; fill:#547D9112; }
+.lookup-failure.map-request-target > rect { fill:#FFF0DA; stroke:#B7752B; }
+.lookup-failure.map-request-target:hover > rect, .lookup-failure.map-request-target:focus-visible > rect { stroke:#547D91; stroke-width:3; }
+.flight-outcomes > button { text-align:left; font-family:inherit; color:var(--text-body); border:1px solid var(--border-subtle); border-radius:8px; padding:10px 12px; min-width:0; background:var(--surface-card); cursor:pointer; }
+.flight-outcomes > button > span { display:block; font-size:13px; line-height:1.5; margin-top:4px; color:var(--text-muted); }
+.flight-outcomes > button small { display:block; margin-top:8px; font-size:12px; color:var(--text-link); }
+.flight-outcomes > button:hover { background:var(--surface-subtle); border-color:#789AAA; }
+.recovery-selected { scroll-margin-top:16px; outline:none; }
+.recovery-selected:focus-visible { outline:2px solid #789AAA; outline-offset:4px; border-radius:12px; }
+.request-pending { margin-top:12px; font-size:14px; color:var(--text-muted); }
+
+.back-to-map { display:inline-flex; align-items:center; justify-content:center; min-height:44px; margin:0 0 12px; padding:8px 14px; border:1px solid var(--border-subtle); border-radius:8px; background:var(--surface-card); color:var(--text-body); font:500 14px/1.5 Inter,sans-serif; cursor:pointer; }
+.back-to-map:hover { background:var(--surface-subtle); border-color:#789AAA; }
+.flight-map:focus { outline:none; }
+.flight-map:focus-visible { outline:2px solid #789AAA; outline-offset:4px; }
+
+/* A quiet location cue, independent of the simulation clock. */
+.flight-map .map-request-target.request-returned > rect { stroke:#547D91; fill:#547D9114; }
+.flight-outcomes > button[data-returned=true] { border-color:#547D91; background:color-mix(in srgb, var(--surface-card) 94%, #547D91); box-shadow:inset 0 0 0 1px #547D9133; }
+.flight-outcomes > button[data-returned=true] small { color:#436579; font-weight:500; }
+[data-theme=dark] .flight-map .map-request-target.request-returned > rect { stroke:#789AAA; fill:#789AAA18; }
+[data-theme=dark] .flight-outcomes > button[data-returned=true] { border-color:#789AAA; background:color-mix(in srgb, var(--surface-card) 90%, #789AAA); }
+[data-theme=dark] .flight-outcomes > button[data-returned=true] small { color:#A9C6D5; }
+.flight-map .service-label { font-size:11px; fill:var(--text-muted); }
+.route-lightning { fill:#B7752B; stroke:var(--surface-card); stroke-width:1; }
+.flight-map .map-event { border:1px solid var(--border-subtle); border-left:3px solid #789AAA; border-radius:6px; }
+
+/* Reserve readable status lines so updates do not resize the map or its chart. */
+.flight-map .map-event strong { line-height:1.5; min-height:1.5em; }
+.flight-map .map-event > span { line-height:1.5; min-height:3em; }
+.flight-outcomes > button { display:flex; flex-direction:column; align-items:stretch; }
+.flight-outcomes > button > span { min-height:4.5em; }
+.flight-outcomes > button small { margin-top:auto; padding-top:8px; }
+@media(max-width:600px) {
+ .flight-map .map-event strong { min-height:3em; }
+ .flight-map .map-event > span { min-height:4.5em; }
+ .flight-outcomes strong { min-height:3em; }
+}
+
+/* Route identity, current status, and next action each have a clear role. */
+.flight-outcomes > button { background:var(--section-context,var(--surface-subtle)); border-color:var(--section-edge,var(--border-subtle)); }
+.flight-outcomes > button strong { padding-bottom:8px; border-bottom:1px solid var(--section-edge,var(--border-subtle)); align-items:baseline; }
+.flight-outcomes strong > span { padding:2px 5px; border-radius:4px; background:var(--surface-card); color:var(--text-muted); font-weight:600; }
+.flight-outcomes .route-status > span { display:block; }
+.flight-outcomes .route-status > span:first-child { font-weight:600; color:var(--text-strong); }
+.flight-outcomes .route-status > span + span { margin-top:3px; color:var(--text-muted); }
+.flight-outcomes > button small { color:var(--text-link); font-weight:500; }
+.flight-outcomes > button > .route-status { min-height:5em; }
+.flight-outcomes > button small { align-self:flex-start; margin-top:8px; padding:6px 9px; border:1px solid var(--section-result-edge,var(--border-subtle)); border-radius:5px; background:var(--surface-card); color:var(--text-link); }
+.flight-outcomes > button:disabled small { border-color:transparent; background:transparent; padding-left:0; color:var(--text-muted); }

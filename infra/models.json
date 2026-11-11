@@ -1,0 +1,48 @@
+{
+  "_comment": [
+    "What scripts/deploy_models.py deploys. One entry per job. 'job' ties the",
+    "deployment to the catalog entry the app uses (aidpair/catalog.py);",
+    "'create' is the body POSTed to /v4/organizations/{orgId}/aiServices/models;",
+    "'update' is PUT afterwards (caching etc.).",
+    "",
+    "UNCONFIRMED until the dev team answers (docs/MOVING-TO-CAPELLA.md):",
+    "the catalogModelName strings for the Bedrock serverless models, whether",
+    "cloudConfig.compute applies to them, and the shape of the caching block.",
+    "The values below are best guesses and are the first thing to correct."
+  ],
+  "region": "us-east-1",
+  "api_key_name": "aidp-air-demo",
+  "models": [
+    {
+      "job": "classify",
+      "catalog_id": "amazon.nova-micro-v1:0",
+      "create": {
+        "name": "aidp-air-classify",
+        "catalogModelName": "amazon.nova-micro-v1:0",
+        "cloudConfig": { "provider": "aws", "region": "us-east-1" }
+      },
+      "update": { "caching": { "enabled": true, "strategy": "semantic" } }
+    },
+    {
+      "job": "agent",
+      "catalog_id": "anthropic.claude-sonnet-5",
+      "create": {
+        "name": "aidp-air-agent",
+        "catalogModelName": "global.anthropic.claude-sonnet-5",
+        "cloudConfig": { "provider": "aws", "region": "us-east-1" }
+      }
+    },
+    {
+      "job": "embed",
+      "catalog_id": null,
+      "_why": "The semantic cache needs an embedding model attached; its dimension must match the cache's.",
+      "create": {
+        "name": "aidp-air-embed",
+        "catalogModelName": "Snowflake/snowflake-arctic-embed-m-v2.0",
+        "cloudConfig": { "provider": "aws", "region": "us-east-1", "compute": { "cpu": 4, "ram": 16 } },
+        "quantization": "fullPrecision",
+        "optimization": "throughput"
+      }
+    }
+  ]
+}

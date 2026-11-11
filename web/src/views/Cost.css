@@ -1,0 +1,20 @@
+/* Match the compact dashboard geometry without changing chart semantics. */
+.stage .cost-view .card,.stage .cost-view .stat { border-radius:8px; padding:18px; min-width:0; }
+.stage .cost-view .cost-stats { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:20px 0 16px; align-items:stretch; }
+.stage .cost-stats .stat { min-height:100px; justify-content:center; padding:16px; }
+.stage .cost-stats .value { font-size:30px; }
+.cost-charts { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; align-items:start; }
+.stage .cost-view .cost-charts .card { margin:0; }
+.cost-chart > p { min-height:42px; }
+.cost-chart > div:last-child { height:260px !important; }
+.stage .cost-view > .card { margin-top:16px !important; }
+.cost-view .table-scroll { border:1px solid var(--border-subtle); border-radius:6px; }
+.cost-view .recharts-default-tooltip { background:var(--surface-card) !important; border:1px solid var(--border-subtle) !important; color:var(--text-body); }
+@media(max-width:900px) { .cost-charts { grid-template-columns:minmax(0,1fr); } .cost-chart > p { min-height:0; } }
+@media(max-width:600px) { .stage .cost-view .cost-stats { grid-template-columns:repeat(2,minmax(0,1fr)); } .stage .cost-view .card { padding:16px; } .stage .cost-stats .stat { min-height:92px; padding:14px; } .cost-chart > div:last-child { height:230px !important; } }
+.stage .cost-view .chart-legend { display:flex; flex-wrap:wrap; gap:8px 14px; padding:10px 12px !important; border:1px solid var(--section-edge); border-radius:6px; background:var(--section-context); }
+.cost-view .chart-legend > span { font-size:13px; color:var(--text-body); }
+
+/* Compact, distinct legend labels without a surrounding gray slab. */
+.stage .cost-view .chart-legend { background:transparent; border:0; padding:6px 0 12px !important; gap:8px; }
+.cost-view .chart-legend > span { padding:6px 9px; border:1px solid var(--section-edge,var(--border-subtle)); border-radius:4px; background:var(--surface-card); font-weight:500; }

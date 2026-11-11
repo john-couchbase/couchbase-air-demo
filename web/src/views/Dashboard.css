@@ -1,0 +1,93 @@
+/* Compact desktop overview; the phone retains its two-column metrics. */
+.stage .dashboard-overview { display:block; margin-top:20px; }
+.stage .dashboard-overview .dashboard-stats { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:0; align-items:start; }
+.stage .dashboard-stats .stat { min-height:100px; padding:16px; justify-content:center; border-radius:8px; }
+.stage .dashboard-stats .value { font-size:30px; }
+.dashboard-visuals { display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); gap:16px; align-items:start; margin-top:16px; }
+.stage .dashboard-visuals > .card { margin:0 !important; border-radius:8px; padding:18px; }
+.stage .dashboard-visuals .message-chart { height:300px !important; }
+.stage .dashboard-evidence { grid-template-columns:minmax(0,2fr) minmax(240px,1fr); align-items:start; gap:16px; }
+.stage .dashboard-evidence > .card { border-radius:8px; }
+.stage .request-item { border-radius:8px; }
+.stage .request-assessment dl { display:grid; grid-template-columns:1fr; gap:8px; margin:0; }
+.stage .request-assessment dl > div { display:grid; grid-template-columns:110px minmax(0,1fr); align-items:start; gap:12px; }
+.stage .request-assessment :is(dt,dd) { font-size:14px; line-height:1.5; }
+.stage .request-assessment dt::after { content:none; }
+.request-next { display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between; align-items:center; margin-top:12px; padding:12px; border:1px solid var(--border-subtle); border-radius:6px; background:var(--surface-card); }
+.request-next > div { flex:1 1 200px; }
+.request-next strong { font-size:14px; font-weight:600; color:var(--text-strong); }
+.request-next p { font-size:13px; color:var(--text-muted); margin:5px 0 0; }
+.request-next button { font:500 14px/1.4 Inter,sans-serif; min-height:44px; padding:8px 12px; border:1px solid #789AAA; border-radius:6px; background:var(--surface-subtle); color:var(--text-strong); cursor:pointer; }
+.request-next button:hover { border-color:var(--cb-red); }
+.request-next button:focus-visible { outline:2px solid #547D91; outline-offset:3px; }
+@media(max-width:900px) { .dashboard-visuals { grid-template-columns:minmax(0,1fr); } .stage .dashboard-evidence { grid-template-columns:minmax(0,1fr); } }
+@media(max-width:600px) { .stage .dashboard-overview .dashboard-stats { grid-template-columns:repeat(2,minmax(0,1fr)); } .stage .dashboard-stats .stat { min-height:92px; padding:14px; } .stage .dashboard-visuals .message-chart { height:240px !important; } .stage .request-assessment dl > div { grid-template-columns:95px minmax(0,1fr); } }
+
+/* Fill the desktop row to the map's natural height without stretching mobile. */
+@media(min-width:901px) {
+ .dashboard-visuals { align-items:stretch; }
+ .stage .dashboard-visuals .message-traffic { display:flex; flex-direction:column; min-width:0; }
+ .stage .dashboard-visuals .message-chart { flex:1 1 0; height:0 !important; min-height:300px; }
+ .dashboard-visuals .message-chart > .recharts-responsive-container { position:absolute; inset:0; }
+}
+.request-feed-scroll { max-height:590px; overflow-y:auto; overscroll-behavior:contain; scrollbar-gutter:stable; padding-right:6px; }
+.request-feed-scroll:focus-visible { outline:2px solid #547D91; outline-offset:3px; border-radius:6px; }
+.request-feed-scroll .request-item:first-child { margin-top:0; }
+@media(max-width:600px) { .request-feed-scroll { max-height:560px; } }
+.dashboard-method { margin-top:16px; }
+.dashboard-method > .card { padding:16px 18px; border-radius:8px; }
+.dashboard-method p:last-child { margin-bottom:0 !important; }
+
+/* A tighter desktop demo frame, with enough room reserved for changing labels. */
+@media(min-width:901px) {
+ .stage .dashboard-overview { margin-top:12px; }
+ .stage .dashboard-stats .stat { min-height:84px; padding:12px 16px; }
+ .dashboard-visuals { margin-top:12px; gap:16px; }
+ .stage .dashboard-visuals > .card { padding:16px; }
+ .dashboard-visuals .flight-map > svg { height:170px; width:100%; margin:6px auto; }
+ .dashboard-visuals .flight-outcomes { margin:8px 0; gap:8px; }
+ .dashboard-visuals .flight-outcomes > button { padding:8px 10px; }
+ .dashboard-visuals .flight-outcomes > button strong { padding-bottom:4px; }
+ .dashboard-visuals .flight-outcomes > button small { margin-top:4px; padding:4px 7px; }
+ .dashboard-visuals .map-event { margin-top:8px; padding:8px 10px; }
+ .dashboard-visuals .message-chart { min-height:260px !important; }
+}
+@media(min-width:1200px) {
+ .dashboard-visuals .flight-outcomes > button > .route-status { min-height:3.3em; }
+}
+/* Optional illustration emphasis; the simulation clock and requests stay intact. */
+.map-controls { display:flex; align-items:center; gap:8px; flex-wrap:wrap; justify-content:flex-end; }
+.map-size-toggle { min-height:44px; padding:8px 10px; border:1px solid var(--section-edge,var(--border-subtle)); border-radius:6px; background:var(--surface-card); color:var(--text-body); font:500 13px/1.4 Inter,sans-serif; cursor:pointer; }
+.map-size-toggle[aria-pressed=true] { background:var(--section-result,var(--surface-subtle)); border-color:var(--section-result-edge,var(--border-subtle)); }
+.map-size-toggle:focus-visible { outline:2px solid #547D91; outline-offset:3px; }
+.stage .dashboard-visuals .flight-map.map-expanded > svg { height:290px; max-width:none; }
+.stage .dashboard-visuals .map-expanded .flight-outcomes > button { padding:6px 8px; }
+.stage .dashboard-visuals .map-expanded .flight-outcomes > button strong { padding-bottom:2px; font-size:13px; }
+.stage .dashboard-visuals .map-expanded .flight-outcomes > button > .route-status { min-height:3.3em; font-size:12px; }
+.stage .dashboard-visuals .map-expanded .flight-outcomes > button small { margin-top:2px; padding:3px 6px; }
+@media(max-width:600px) { .map-controls { justify-content:flex-start; } .stage .dashboard-visuals .flight-map.map-expanded > svg { height:220px; } .stage .dashboard-visuals .map-expanded .flight-outcomes > button > .route-status { min-height:5em; } }
+.message-shortcuts { display:grid; gap:6px; margin-top:12px; }
+.message-shortcuts button { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto; align-items:center; gap:8px; min-height:48px; padding:8px 10px; border:1px solid var(--section-edge,var(--border-subtle)); border-radius:5px; background:var(--section-context,var(--surface-subtle)); color:var(--text-body); font:400 12px/1.4 Inter,sans-serif; text-align:left; cursor:pointer; }
+.message-shortcuts button > span:first-child { display:flex; flex-direction:column; gap:2px; }
+.message-shortcuts strong { font-size:13px; font-weight:600; color:var(--text-strong); }
+.shortcut-issue { color:var(--text-muted); }
+.shortcut-action { color:var(--text-link); font-weight:600; }
+.message-shortcuts button:focus-visible { outline:2px solid #547D91; outline-offset:2px; }
+.message-shortcuts button:hover { border-color:var(--section-result-edge); background:var(--section-result); }
+.stage .dashboard-overview .dashboard-stats { align-items:stretch; }
+@media(min-width:901px) { .stage .dashboard-visuals .message-chart { min-height:180px !important; } }
+@media(max-width:600px) { .stage .dashboard-stats .label { font-size:12px; white-space:nowrap; } .stage .dashboard-stats .stat { padding:12px 10px; } }
+/* The map owns its panel; conversations live once, below the traffic chart. */
+@media(min-width:901px) {
+ .stage .dashboard-visuals .flight-map { display:flex; flex-direction:column; }
+ .stage .dashboard-visuals .flight-map > svg { flex:1 1 auto; height:340px; min-height:340px; margin:12px auto 0; }
+ .stage .dashboard-visuals .flight-map.map-expanded > svg { height:440px; min-height:440px; }
+}
+@media(max-width:900px) { .stage .dashboard-visuals .flight-map > svg { height:auto; margin-bottom:0; } }
+
+/* Conversations stay visible above both visual panels, with touch scrolling. */
+.stage .message-shortcuts { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(0,1fr); gap:10px; overflow-x:auto; scroll-snap-type:x proximity; padding:2px 2px 8px; margin:12px 0 0; }
+.stage .message-shortcuts button { grid-template-columns:1fr; gap:6px; min-height:114px; scroll-snap-align:start; padding:12px 14px; }
+.stage .message-shortcuts .shortcut-action { justify-self:start; }
+@media(max-width:900px) { .stage .message-shortcuts { grid-auto-columns:220px; } }
+@media(max-width:600px) { .stage .message-shortcuts { grid-auto-columns:200px; } }

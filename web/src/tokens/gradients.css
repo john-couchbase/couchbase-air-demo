@@ -1,0 +1,20 @@
+/* Warm "flame" gradient system. Gradients are BACKGROUNDS ONLY — never body text over a gradient zone
+   unless that zone is light or dark enough to keep text legible. */
+:root {
+  /* Signature flame ramp — hero backgrounds & section covers ONLY */
+  --gradient-flame: linear-gradient(135deg, #FFFFFF 0%, var(--cb-peach) 22%, var(--cb-orange) 48%, var(--cb-red) 68%, var(--cb-burgundy) 84%, #000000 100%);
+  --gradient-flame-vertical: linear-gradient(180deg, #FFFFFF 0%, var(--cb-peach) 22%, var(--cb-orange) 48%, var(--cb-red) 68%, var(--cb-burgundy) 84%, #000000 100%);
+  /* Dark hero variant — deep end of the flame for title/cover slides with light type */
+  --gradient-flame-dark: linear-gradient(135deg, var(--cb-orange) 0%, var(--cb-red) 34%, var(--cb-burgundy) 66%, #000000 100%);
+
+  /* Soft light gradient — White → Peach */
+  --gradient-soft: linear-gradient(135deg, var(--cb-white) 0%, var(--cb-peach) 100%);
+
+  /* Warm gradient — Orange → Red */
+  --gradient-warm: linear-gradient(135deg, var(--cb-orange) 0%, var(--cb-red) 100%);
+
+  /* Floods — a thin warm band on one edge; the rest stays clean. Keep narrow. */
+  --flood-bottom: linear-gradient(180deg, transparent 78%, var(--cb-peach) 86%, var(--cb-orange) 93%, var(--cb-red) 100%);
+  --flood-bottom-dark: linear-gradient(180deg, transparent 78%, var(--cb-orange) 90%, var(--cb-red) 96%, var(--cb-burgundy) 100%);
+  --flood-band: linear-gradient(90deg, var(--cb-peach) 0%, var(--cb-orange) 45%, var(--cb-red) 78%, var(--cb-burgundy) 100%);
+}

@@ -1,0 +1,44 @@
+/* Couchbase brand color tokens. Palette is CLOSED — never introduce colors outside this set. */
+:root {
+  /* Brand — Red & Orange are the signature colors */
+  --cb-red: #EC1218;
+  --cb-orange: #FC9C0C;
+  --cb-burgundy: #97000F;
+  --cb-peach: #FFF0DB;
+  --cb-blue: #0266C2; /* the ONLY cool color — supporting accent, used sparingly (diagrams/data) */
+
+  /* Neutrals */
+  --cb-black: #000000;
+  --cb-dark-grey: #2E2E2E;
+  --cb-light-grey: #A8A8A8;
+  --cb-white-grey: #F7F7F7;
+  --cb-white: #FFFFFF;
+
+  /* ---- Semantic aliases ---- */
+  --color-primary: var(--cb-red);
+  --color-primary-hover: var(--cb-burgundy);
+  --color-secondary: var(--cb-orange);
+  --color-accent-cool: var(--cb-blue);
+
+  --text-strong: var(--cb-black);
+  --text-body: var(--cb-dark-grey);
+  --text-muted: #595953;
+  --text-on-dark: var(--cb-white);
+  --text-link: var(--cb-red);
+  --text-link-hover: var(--cb-burgundy);
+
+  --surface-page: var(--cb-white);
+  --surface-subtle: var(--cb-white-grey);
+  --surface-card: var(--cb-white);
+  --surface-inverse: var(--cb-black);
+  --surface-inverse-deep: var(--cb-burgundy);
+
+  --border-subtle: #E6E6E6;
+  --border-default: var(--cb-light-grey);
+  --border-strong: var(--cb-dark-grey);
+
+  /* Status — mapped onto the closed palette */
+  --status-danger: var(--cb-red);
+  --status-warning: var(--cb-orange);
+  --status-info: var(--cb-blue);
+}

@@ -1,0 +1,56 @@
+/* Header controls follow the concierge reference: one neutral menu and a
+   64 × 34 sliding switch inside a 44px touch target. Status belongs to the run. */
+.presenter .demo-controls { display:flex; align-items:center; gap:16px; margin-left:auto; flex-shrink:0; }
+.demo-menu { position:relative; }
+.demo-menu > summary {
+ display:flex; align-items:center; justify-content:center; gap:10px;
+ min-height:44px; padding:10px 14px; border:1px solid var(--border-subtle);
+ border-radius:8px; background:var(--surface-card); color:var(--text-body);
+ font:400 14px/1.5 Inter,sans-serif; cursor:pointer; list-style:none;
+}
+.demo-menu > summary::-webkit-details-marker { display:none; }
+.demo-menu > summary::after { content:'+'; width:18px; font:400 20px/1 Inter,sans-serif; text-align:center; }
+.demo-menu[open] > summary::after { content:'−'; }
+.demo-menu > summary:hover, .demo-menu[open] > summary { background:var(--surface-subtle); }
+.demo-menu[open] > summary { color:#97000F; }
+[data-theme=dark] .demo-menu[open] > summary { color:#FFAAA4; }
+.presenter .appearance-toggle {
+ width:64px; height:44px; min-height:44px; padding:5px 0; border:0;
+ background:transparent; cursor:pointer; flex-shrink:0;
+}
+.appearance-track {
+ position:relative; width:64px; height:34px; display:flex; align-items:center;
+ justify-content:space-around; border:1px solid var(--border-subtle);
+ border-radius:30px; background:var(--surface-subtle); color:var(--text-strong); font:19px/1 Inter,sans-serif;
+}
+.appearance-thumb {
+ position:absolute; width:26px; height:26px; left:3px; top:3px;
+ background:var(--surface-card); border-radius:50%; box-shadow:0 1px 4px #0003;
+ transition:transform .25s ease;
+}
+.appearance-toggle[aria-checked=true] .appearance-thumb { transform:translateX(29px); }
+.run-phase { color:var(--text-muted); white-space:nowrap; font-size:13px; border-left:1px solid currentColor; padding-left:12px; }
+.run-note { color:var(--text-muted); font-size:13px; margin-bottom:16px; }
+@media(max-width:1100px) {
+ .presenter .demo-controls { grid-column:2; grid-row:1; margin:0; justify-self:end; }
+}
+@media(max-width:600px) {
+ .presenter { grid-template-columns:minmax(0,1fr) auto; }
+ .presenter .demo-controls { gap:12px; }
+ .presenter .brand img { width:120px; }
+ .presenter .nav { grid-row:2; }
+ .sample-banner > span:last-child { flex-basis:100%; }
+}
+@media(prefers-reduced-motion:reduce) { .appearance-thumb { transition:none; } }
+/* Keep the thumb visible against the dark track, as in the calculator. */
+[data-theme=dark] .appearance-thumb { background:#F5F5F5; }
+
+.presenter .share-link { display:flex; align-items:center; justify-content:center; gap:8px; min-height:44px; min-width:112px; padding:10px 12px; border:1px solid var(--border-subtle); border-radius:8px; background:var(--surface-card); color:var(--text-body); font:400 14px/1.5 Inter,sans-serif; white-space:nowrap; cursor:pointer; }
+.presenter .share-link:hover { background:var(--surface-subtle); }
+.presenter .share-link[data-copied=true] { color:var(--cb-burgundy); }
+[data-theme=dark] .presenter .share-link[data-copied=true] { color:#FFAAA4; }
+@media(max-width:600px) {
+ .presenter .demo-controls { gap:8px; }
+ .presenter .share-link { width:44px; min-width:44px; padding:10px; }
+ .presenter .share-link span { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+}

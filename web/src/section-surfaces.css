@@ -1,0 +1,43 @@
+/* Shared section roles: warm context, neutral evidence, cream outcomes. */
+.stage {
+ --section-edge:#BDB6AA;
+ --section-context:#F6F2E9;
+ --section-context-ink:#655747;
+ --section-detail:#F1F0EB;
+ --section-result:#FFF0DA;
+ --section-result-edge:#C9B18B;
+ --section-result-ink:#624A24;
+ --section-selected:#7C0206;
+}
+[data-theme=dark] .stage {
+ --section-edge:#66615A;
+ --section-context:#302D28;
+ --section-context-ink:#D8CEBE;
+ --section-detail:#303030;
+ --section-result:#383025;
+ --section-result-edge:#88714F;
+ --section-result-ink:#F1DFBE;
+ --section-selected:#FFB5B5;
+}
+.stage :is(.dashboard-evidence > .card,.recovery-view .card,.cost-view > .card,.cost-chart) { border-color:var(--section-edge); }
+.stage .request-item { background:var(--section-context); border-color:var(--section-edge); }
+.stage .request-heading > span { color:var(--section-context-ink); }
+.stage .request-assessment { background:var(--surface-card); border-color:var(--section-edge); }
+.stage .request-assessment dt { color:var(--text-muted); font-weight:500; }
+.stage .request-next { background:var(--section-result); border-color:var(--section-result-edge); }
+.stage .request-next :is(strong,p) { color:var(--section-result-ink); }
+.stage .request-next button { background:var(--surface-card); border-color:var(--section-result-edge); }
+.stage .recovery-view .recovery-queue { background:var(--section-context); }
+.stage .recovery-view .recovery-request { border-color:var(--section-edge); background:var(--surface-card); }
+.stage .recovery-view .recovery-request[aria-current=true] { background:var(--section-result); border-color:var(--section-result-edge) !important; box-shadow:inset 3px 0 0 var(--section-selected); }
+.stage .recovery-view .recovery-request[aria-current=true] .request-name { color:var(--section-selected); }
+.stage .recovery-view .recovery-request[aria-current=true] :is(.request-flight,.request-status) { color:var(--section-result-ink); }
+.stage .recovery-view .passenger-identity { background:var(--section-context); border:1px solid var(--section-edge); border-radius:6px; padding:12px; }
+.stage .recovery-view .passenger-identity p { color:var(--section-context-ink); }
+.stage .recovery-view .passenger-memory { background:var(--section-context); }
+.stage .recovery-view .tool-exchange { background:var(--section-detail); border-color:var(--section-edge); }
+.stage .recovery-view .tool-request { background:var(--surface-card); border-color:var(--section-edge); }
+.stage .recovery-view .tool-result { border-color:#9AADB7; }
+.stage .recovery-view .tool-exchange.failed .tool-result { border-color:var(--section-result-edge); background:var(--section-result); color:var(--section-result-ink); }
+.stage .recovery-view .recovery-decision { border-color:var(--section-result-edge); }
+.stage .cost-view .table thead { background:var(--section-context); color:var(--section-context-ink); }

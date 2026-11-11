@@ -1,0 +1,44 @@
+/* Typography — Centra headings and Inter body. Scale relative to 16px body.
+   Casing: Title Case for product/service names; sentence case for headlines & subheads. */
+:root {
+  --ui-title: 32px;
+  --ui-section: 22px;
+  --ui-card-title: 20px;
+  --ui-body: 16px;
+  --ui-label: 14px;
+  --ui-meta: 13px;
+  --ui-metric: 36px;
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Type scale (px sizes at design scale) */
+  --type-big-size: 96px;        /* Big header  — Medium, lh 100%, tracking -0.01em */
+  --type-big-lh: 1.0;
+  --type-big-tracking: -0.01em;
+  --type-big-weight: var(--font-weight-medium);
+
+  --type-small-size: 50px;      /* Small header / subline — Medium, lh .96, tracking -0.01em */
+  --type-small-lh: 0.96;
+  --type-small-tracking: -0.01em;
+  --type-small-weight: var(--font-weight-medium);
+
+  --type-caps-size: 32px;       /* Small-caps header — SemiBold, ALL CAPS, lh 1.06, tracking .025em */
+  --type-caps-lh: 1.06;
+  --type-caps-tracking: 0.025em;
+  --type-caps-weight: var(--font-weight-semibold);
+
+  --type-bodyhead-size: 20px;   /* Body header — Bold, lh 1.5 */
+  --type-bodyhead-lh: 1.5;
+  --type-bodyhead-weight: var(--font-weight-bold);
+
+  --type-body-size: 16px;       /* Body copy — Regular, lh 1.6 */
+  --type-body-lh: 1.6;
+  --type-body-weight: var(--font-weight-regular);
+
+  --type-small-print-size: 13px;
+  --type-small-print-lh: 1.5;
+}

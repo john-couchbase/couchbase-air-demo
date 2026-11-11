@@ -1,0 +1,161 @@
+/* Compact reading hierarchy shared by pending and completed requests. */
+.recovery-view .card { border-radius:10px; }
+.recovery-request { display:flex; flex-direction:column; gap:6px; width:100%; padding:12px; margin-bottom:8px; text-align:left; font:inherit; color:var(--text-body); background:var(--surface-card); border:1px solid var(--border-subtle); border-radius:8px; cursor:pointer; }
+.request-name { font-size:15px; color:var(--text-strong); }
+.request-flight,.request-status { font-size:13px; color:var(--text-muted); }
+.priority-label { display:inline-flex; width:fit-content; padding:3px 7px; border:1px solid var(--border-subtle); border-radius:6px; font:500 12px/1.5 Inter,sans-serif; color:var(--text-body); background:var(--surface-subtle); }
+.priority-label[data-high=true] { background:#FFF6E7; color:#795024; border-color:#DFCBA9; }
+.passenger-detail header h2 { margin:0; font-size:var(--ui-section); }
+.passenger-detail header p { margin:4px 0 0; color:var(--text-muted); font-size:13px; }
+.request-section { margin-top:14px; padding-top:14px; border-top:1px solid var(--border-subtle); }
+.recovery-view .passenger-detail .request-section h3 { font-size:14px; margin:0 0 6px; font-weight:600; }
+.request-section p,.request-section blockquote { margin:0; font-size:14px; line-height:1.6; }
+.request-section blockquote { padding:10px 12px; border-left:3px solid #789AAA; border-radius:0 6px 6px 0; background:var(--surface-subtle); color:var(--text-strong); }
+.request-section .request-requirements { margin-top:6px; color:var(--text-muted); font-size:13px; text-transform:capitalize; }
+.request-classification { display:flex; flex-direction:column; align-items:flex-start; gap:6px; }
+.request-classification > span:last-child { font-size:12px; color:var(--text-muted); }
+.memory-entry { padding:10px 0; border-top:1px solid var(--border-subtle); }
+.memory-entry:last-child { padding-bottom:0; }
+.memory-entry h4,.memory-label { display:block; margin:0 0 5px; font-size:13px; font-weight:600; color:var(--text-muted); }
+.memory-label { margin-top:8px; }
+.memory-entry p,.decision-copy p,.recovery-reply .reply-message p { margin:0; font-size:14px; line-height:1.6; }
+.memory-entry p + p,.decision-copy p + p,.recovery-reply .reply-message p + p { margin-top:8px; }
+.recovery-view .tool-request dl { display:grid; gap:8px; }
+.recovery-view .tool-request dl > div { display:flex; flex-direction:column; align-items:flex-start; gap:2px; }
+.recovery-view .tool-request dt { font-size:12px; }
+.recovery-view :is(.tool-request,.tool-result,.recovery-option,.reply-message) { border-radius:8px; }
+[data-theme=dark] .priority-label[data-high=true] { background:#383126; color:#F5E6CF; border-color:#77664D; }
+
+.request-section blockquote p + p { margin-top:6px; }
+
+/* Familiar inbox structure: choose a person, then read one conversation. */
+.recovery-view .recovery-layout { grid-template-columns:260px minmax(0,1fr); align-items:start; gap:20px; }
+.recovery-view .recovery-queue { position:sticky; top:12px; max-height:calc(100dvh - 160px); padding:12px; }
+.inbox-list-heading { display:flex; align-items:baseline; justify-content:space-between; gap:8px; padding:4px 2px 12px; }
+.recovery-view .inbox-list-heading h2 { font-size:16px; margin:0; }
+.inbox-list-heading > span { font-size:12px; color:var(--text-muted); }
+.recovery-view .recovery-request { display:flex; flex-direction:row; align-items:flex-start; gap:10px; margin:0; border:1px solid transparent; border-radius:8px; box-shadow:none; }
+.recovery-view .recovery-request[aria-current=true] { background:var(--surface-subtle); border-color:#789AAA; }
+.recovery-request:hover { background:var(--surface-subtle); }
+.recovery-request:focus-visible,.conversation-views button:focus-visible { outline:2px solid #547D91; outline-offset:2px; }
+.passenger-initials { display:flex; align-items:center; justify-content:center; flex-shrink:0; width:36px; height:36px; border:1px solid var(--border-subtle); border-radius:8px; background:var(--surface-subtle); color:var(--text-strong); font:500 13px/1 Inter,sans-serif; }
+.inbox-preview { display:flex; flex-direction:column; gap:4px; min-width:0; }
+.inbox-preview .request-name { font-size:14px; }
+.inbox-preview .request-flight,.inbox-preview .request-status { font-size:12px; }
+.passenger-identity { display:flex; gap:12px; align-items:center; }
+.recovery-view .passenger-identity h2 { font-size:22px; }
+.recovery-view .passenger-detail { padding:20px; }
+.recovery-view .passenger-detail blockquote { border:none; border-radius:8px; padding:12px 14px; }
+.request-classification { margin-top:10px; }
+.conversation-views { display:flex; gap:4px; padding-bottom:12px; }
+.conversation-views button { min-height:44px; padding:8px 12px; border-radius:8px; border:1px solid transparent; font:500 14px/1.4 Inter,sans-serif; background:transparent; color:var(--text-muted); cursor:pointer; }
+.conversation-views button[aria-pressed=true] { color:var(--text-strong); background:var(--surface-subtle); border-color:var(--border-subtle); }
+.conversation-views button span { font-size:12px; margin-left:4px; }
+.recovery-view .recovery-reply { border-color:#789AAA; }
+.recovery-view .recovery-decision { background:var(--surface-subtle); }
+.recovery-view .recovery-selected { min-width:0; }
+@media(max-width:900px) {
+ .recovery-view .recovery-layout { grid-template-columns:minmax(0,1fr); gap:14px; }
+ .recovery-view .recovery-queue { position:static; max-height:none; padding:10px; }
+ .inbox-passengers { display:flex; gap:8px; overflow-x:auto; padding:2px; }
+ .recovery-view .recovery-request { flex:1 0 190px; width:auto; }
+ .inbox-list-heading { padding-bottom:8px; }
+}
+@media(max-width:480px) {
+ .recovery-view .recovery-request { flex-basis:150px; gap:8px; padding:10px 8px; }
+ .inbox-preview .request-name { font-size:13px; }
+ .recovery-request .passenger-initials { display:none; }
+ .recovery-view .passenger-detail { padding:16px; }
+ .recovery-view .passenger-identity h2 { font-size:20px; }
+ .conversation-views button { flex:1; padding:8px; }
+}
+
+[data-theme=dark] .recovery-view .recovery-request[aria-current=true] { border-color:#789AAA !important; background:#29343A; }
+
+/* Conversation roles: neutral passenger, cream proposal, steel-blue reply. */
+.recovery-view { --proposal-bg:#FFF6E7; --proposal-border:#D8C29B; --proposal-ink:#624A24; --reply-bg:#EFF4F6; --reply-border:#A9BFCA; --reply-ink:#344F5E; }
+[data-theme=dark] .recovery-view { --proposal-bg:#332D23; --proposal-border:#756347; --proposal-ink:#F1DFBE; --reply-bg:#24343D; --reply-border:#5B7888; --reply-ink:#D7E8F0; }
+.recovery-view .passenger-message { border-top:none; padding-top:0; }
+.message-heading,.recovery-view .decision-heading { display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:4px 12px; margin-bottom:8px; }
+.recovery-view .passenger-detail .message-heading h3,.recovery-view .recovery-decision .decision-heading h3,.recovery-view .recovery-reply .decision-heading h3 { margin:0; font:600 14px/1.5 Inter,sans-serif; letter-spacing:0; color:inherit; }
+.message-heading > span,.recovery-view .decision-heading > span { font:400 12px/1.5 Inter,sans-serif; color:inherit; }
+.message-heading { color:var(--text-body); }
+.recovery-view .passenger-detail blockquote { background:var(--surface-subtle); border:1px solid var(--border-subtle); }
+.recovery-view .passenger-message blockquote p,.recovery-view .decision-copy p,.recovery-view .reply-message p { font:400 14px/1.6 Inter,sans-serif; color:inherit; }
+.recovery-view .passenger-message blockquote p + p,.recovery-view .decision-copy p + p,.recovery-view .reply-message p + p { margin-top:6px; }
+.recovery-view .recovery-decision,.recovery-view .recovery-preparing { background:var(--proposal-bg); border:1px solid var(--proposal-border); color:var(--proposal-ink); padding:16px 20px; }
+.recovery-view .recovery-decision :is(.decision-benefits,.decision-details summary,.decision-details p) { color:var(--proposal-ink); }
+.recovery-view .recovery-decision .decision-details { border-color:var(--proposal-border); }
+.recovery-view .recovery-reply { background:var(--reply-bg); border:1px solid var(--reply-border); color:var(--reply-ink); padding:16px 20px; }
+.recovery-view .recovery-reply .reply-message { padding:0; background:none; border:none; color:var(--reply-ink); }
+.recovery-view .recovery-reply .reply-confirmed { color:var(--reply-ink); }
+.thread-step { animation:conversation-arrive 220ms ease-out both; }
+.recovery-decision.thread-step { animation-delay:70ms; }
+.recovery-reply.thread-step { animation-delay:140ms; }
+@keyframes conversation-arrive { from { opacity:.7; transform:translateY(3px); } to { opacity:1; transform:translateY(0); } }
+@media(prefers-reduced-motion:reduce) { .thread-step { animation:none; } }
+@media(max-width:480px) { .recovery-view .recovery-decision,.recovery-view .recovery-reply { padding:16px; } }
+
+/* The passenger and airport share a thread; the proposal remains outside it. */
+.recovery-view .passenger-message { margin-right:48px; }
+.recovery-view .passenger-detail .airport-message { margin:16px 0 0 48px; padding:12px 14px; border-radius:8px; }
+.recovery-view .passenger-detail .airport-message .decision-heading h3 { font:600 14px/1.5 Inter,sans-serif; color:inherit; letter-spacing:0; }
+.recovery-view .airport-message .reply-action { margin-top:12px; }
+.recovery-view .passenger-detail .airport-message .reply-message { background:none; border:none; padding:0; color:inherit; }
+@media(max-width:600px) {
+ .recovery-view .passenger-message { margin-right:14px; }
+ .recovery-view .passenger-detail .airport-message { margin-left:14px; }
+ .recovery-view .airport-message .decision-heading { flex-direction:column; align-items:flex-start; }
+}
+
+/* Text-message exchange; only the final offer contains an action. */
+.recovery-view .sms-thread { padding:20px; }
+.sms-thread .passenger-identity { padding-bottom:16px; border-bottom:1px solid var(--border-subtle); }
+.sms-message { display:flex; flex-direction:column; width:fit-content; max-width:82%; margin-top:20px; gap:5px; }
+.sms-sender { font:500 12px/1.5 Inter,sans-serif; color:var(--text-muted); padding:0 10px; }
+.sms-bubble { padding:12px 16px; border-radius:18px; }
+.recovery-view .sms-bubble p { margin:0; font:400 15px/1.5 Inter,sans-serif; color:inherit; }
+.recovery-view .sms-bubble p + p { margin-top:4px; }
+.sms-incoming { margin-right:auto; }
+.sms-incoming .sms-bubble { background:#E9E9EB; color:#202124; border-bottom-left-radius:5px; }
+.sms-outgoing { margin-left:auto; align-items:flex-end; }
+.sms-outgoing .sms-bubble { background:#246283; color:#fff; border-bottom-right-radius:5px; }
+[data-theme=dark] .sms-incoming .sms-bubble { background:#373739; color:#F5F5F5; }
+[data-theme=dark] .sms-outgoing .sms-bubble { background:#285E7A; color:#fff; }
+.recovery-view .sms-thread + .recovery-decision { margin-top:16px; }
+@media(max-width:600px) { .recovery-view .sms-thread { padding:16px; } .sms-message { max-width:90%; } .sms-bubble { padding:10px 13px; } }
+
+.sms-viewport { height:clamp(300px,45svh,440px); overflow-y:auto; overscroll-behavior:contain; overflow-anchor:none; scrollbar-gutter:stable; padding:0 4px 12px 0; }
+.sms-viewport:focus-visible { outline:2px solid #789AAA; outline-offset:3px; border-radius:8px; }
+.sms-viewport .sms-message { margin-top:12px; }
+.sms-typing .sms-bubble { display:flex; gap:5px; align-items:center; min-height:40px; padding:12px 16px; }
+.sms-typing i { display:block; width:6px; height:6px; border-radius:50%; background:currentColor; animation:sms-dot 900ms ease-in-out infinite alternate; }
+.sms-typing i:nth-child(2) { animation-delay:150ms; }
+.sms-typing i:nth-child(3) { animation-delay:300ms; }
+@keyframes sms-dot { from { opacity:.4; } to { opacity:1; } }
+@media(prefers-reduced-motion:reduce) { .sms-typing i { animation:none; } }
+
+.outcome-summary { display:grid; gap:0; margin:0; border:1px solid var(--proposal-border); border-radius:6px; overflow:hidden; }
+.outcome-summary > div { display:grid; grid-template-columns:140px minmax(0,1fr); gap:12px; padding:10px 12px; }
+.outcome-summary > div + div { border-top:1px solid var(--proposal-border); }
+.outcome-summary dt,.outcome-summary dd { margin:0; font:400 14px/1.5 Inter,sans-serif; }
+.outcome-summary dt { font-weight:600; }
+@media(max-width:600px) { .outcome-summary > div { grid-template-columns:100px minmax(0,1fr); gap:8px; } }
+
+/* Shared squared section rhythm; conversation bubbles retain their shape. */
+.stage .recovery-view .card { border-radius:8px; }
+.stage .recovery-view .recovery-layout { gap:16px; margin-top:16px; }
+.stage .recovery-view .recovery-selected .card { padding:16px; }
+.stage .recovery-view .conversation-evidence { display:grid; gap:16px; }
+.stage .recovery-view .conversation-evidence > .card,.stage .recovery-view .recovery-context { margin:0; }
+.stage .recovery-view .recovery-context { gap:16px; align-items:start; }
+.stage .recovery-view .tool-exchange { border-radius:6px; margin-top:12px; }
+.stage .recovery-view .tool-request dl > div { display:grid; grid-template-columns:110px minmax(0,1fr); gap:10px; width:100%; }
+.stage .recovery-view .tool-request :is(dt,dd) { margin:0; font-size:13px; overflow-wrap:anywhere; }
+.recovery-view .inbox-passengers { overflow-y:auto; max-height:calc(100dvh - 230px); }
+@media(min-width:1200px) { .stage .recovery-view .recovery-layout { grid-template-columns:240px minmax(0,1fr); } .conversation-evidence .recovery-tools { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; align-items:start; } .recovery-tools .tools-heading { grid-column:1/-1; } .stage .recovery-view .recovery-tools .tool-exchange { margin:0; } }
+@media(max-width:900px) { .recovery-view .inbox-passengers { max-height:none; } }
+@media(min-width:901px) { .recovery-view .inbox-passengers { display:grid; gap:8px; } .recovery-view .sms-viewport { height:340px; } }
+.stage .recovery-view .conversation-evidence { margin-top:16px; }
+.stage .recovery-view .tool-exchange { border:1px solid var(--border-subtle); padding:12px; }
+@media(min-width:901px) { .recovery-view .inbox-passengers { max-height:228px; scrollbar-gutter:stable; padding-right:4px; } }

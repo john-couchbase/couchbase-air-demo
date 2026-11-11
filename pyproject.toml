@@ -1,0 +1,26 @@
+[project]
+name = "aidp-air"
+version = "0.1.0"
+description = "AIDP Air - Serverless Bedrock Models in the Couchbase AI Data Plane (surge-driven triage)"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "couchbase>=4.3.0",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "sse-starlette>=2.1.0",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.6.0",
+    "python-dotenv>=1.0.0",
+    "httpx>=0.27.0",
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.7.0", "pytest>=8.0.0"]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

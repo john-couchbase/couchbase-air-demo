@@ -1,0 +1,69 @@
+[
+  {
+    "id": "sample-001",
+    "name": "Alex Morgan",
+    "tier": "Gold",
+    "flight_no": "AIR 204",
+    "dest_city": "New York",
+    "message": "My flight was cancelled. Can I get to New York tonight? I have an appointment at 9 tomorrow morning.",
+    "options": [
+      {
+        "id": "evening",
+        "carrier": "AIDP Air",
+        "flight": "AIR 218",
+        "when": "Tonight / 19:30",
+        "seats": "Available"
+      },
+      {
+        "id": "morning",
+        "carrier": "AIDP Air",
+        "flight": "AIR 302",
+        "when": "Tomorrow / 10:00",
+        "seats": "Available"
+      }
+    ]
+  },
+  {
+    "id": "sample-002",
+    "name": "Sam Rivera",
+    "tier": "Silver",
+    "flight_no": "AIR 410",
+    "dest_city": "Seattle",
+    "message": "My Seattle flight was cancelled. I need two seats together tonight for me and my child.",
+    "options": []
+  },
+  {
+    "id": "sample-003",
+    "name": "Jordan Lee",
+    "tier": "Standard",
+    "flight_no": "AIR 520",
+    "dest_city": "San Francisco",
+    "message": "My SFO flight is delayed by lightning. Should I stay at the gate or find another flight?",
+    "options": [
+      {
+        "id": "keep",
+        "carrier": "AIDP Air",
+        "flight": "AIR 520",
+        "when": "Updated departure / 20:15",
+        "seats": "Existing seat retained"
+      }
+    ]
+  },
+  {
+    "id": "sample-004",
+    "name": "Taylor Brooks",
+    "tier": "Standard",
+    "flight_no": "AIR 630",
+    "dest_city": "Miami",
+    "message": "My Miami flight moved to gate C18. I booked wheelchair assistance. Will someone help me get there?",
+    "options": [
+      {
+        "id": "keep",
+        "carrier": "AIDP Air",
+        "flight": "AIR 630",
+        "when": "Boarding / gate C18",
+        "seats": "Existing seat retained"
+      }
+    ]
+  }
+]
