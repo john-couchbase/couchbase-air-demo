@@ -18,7 +18,7 @@ Follow a flight disruption through passenger conversations, tool calls, and reco
 - Each visitor gets a separate run with saved requests, decisions, and usage in Capella.
 - SQL AI Functions classify messages through Nova Micro, with direct Model Service fallback.
 - Model Service drafts recovery proposals using the request, policy and SQL tool results.
-- Agent Memory remains disabled. SQL token usage is unavailable and excluded from cost totals.
+- Agent Memory is outside this demo’s scope. SQL costs are labeled estimates; direct-model usage is measured when returned.
 - Flights and passengers are fictional. The demo does not change real bookings.
 - The shared allowance is 96 daily step reservations, with three concurrent model operations and 12 steps per session across resets. A direct fallback reserves an additional call.
 

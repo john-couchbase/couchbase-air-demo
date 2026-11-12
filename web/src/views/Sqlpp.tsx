@@ -32,7 +32,7 @@ export default function Sqlpp({ state, example }: { state: State | null; example
     <header className="command-heading"><h1>Commands</h1>
       <p className="lede">The queries and rules behind each request.</p></header>
     <aside className="command-context" aria-label="Connection details">
-      <dl><div><dt>Model connection</dt><dd>{example ? 'Sample data' : 'Capella Model Service'}</dd></div><div><dt>SQL inference</dt><dd>{sqlStatus}</dd></div><div><dt>Memory</dt><dd>Off</dd></div></dl>
+      <dl><div><dt>Model connection</dt><dd>{example ? 'Sample data' : 'Capella Model Service'}</dd></div><div><dt>SQL inference</dt><dd>{sqlStatus}</dd></div></dl>
       <p className="command-reference-label">Reference code, not an execution log.</p>
     </aside>
     {!example && !catalogue && <p className="reference-note" role="status">{failed ? 'Could not load current commands. Reopen this page to retry.' : 'Loading current commands…'}</p>}

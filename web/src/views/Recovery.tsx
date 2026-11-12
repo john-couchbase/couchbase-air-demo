@@ -178,8 +178,6 @@ function Detail({ res, onApprove, busy, local, reader, agent, view, onView }: {
   res: Resolution; onApprove: () => void; busy: boolean; local: boolean; reader: string; agent: string; view: 'conversation'|'checks'; onView: (view: 'conversation'|'checks') => void
 }) {
   const d = res.decision
-  const mem = res.memory_used
-  const hosted = mem.source === 'ams' || mem.source === 'mcp'
   return (
     <div>
       <nav className="conversation-views" aria-label="Request view">
@@ -226,25 +224,6 @@ function Detail({ res, onApprove, busy, local, reader, agent, view, onView }: {
       )}
 
       <div className="card-row recovery-context">
-        {mem.source !== 'disabled' && <div className="card passenger-memory">
-          <div className="section-label" style={{ marginBottom: 8 }}>
-            Agent Memory{exampleActive() ? ' / simulated' : hosted ? ' / hosted service'
-              : mem.source === 'collection_fallback' ? ' / service unavailable, from the collection' : ''}
-          </div>
-          {/* The hosted service recalls facts by semantic search rather than as
-              structured disruptions, so they arrive as notes. */}
-          {hosted && mem.notes.length > 0 &&
-            <div style={{ fontSize: 'var(--ui-label)', color: 'var(--text-muted)', marginBottom: 2 }}>Recalled notes</div>}
-          {mem.disruptions.length === 0 && mem.notes.length === 0 &&
-            <div style={{ fontSize: 'var(--ui-body)' }}>{hosted ? 'Nothing remembered for this passenger.' : 'No prior disruptions.'}</div>}
-          {mem.disruptions.map((h, i) => (
-            <section className="memory-entry" key={i}>
-              <h4>{h.when}</h4><p>{h.what}</p>
-              <span className="memory-label">Previous assistance</span><p>{h.goodwill}</p>
-            </section>
-          ))}
-          {mem.notes.map((n, i) => <div className="memory-entry" key={i}>{paragraphs(n)}</div>)}
-        </div>}
         <div className="card recovery-options">
           <div className="decision-heading"><h3>Available options</h3></div>
           {res.options.length===0 && <p className="empty-note">No suitable flights found. Staff review required.</p>}
