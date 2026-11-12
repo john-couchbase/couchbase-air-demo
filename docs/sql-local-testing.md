@@ -23,3 +23,5 @@ Use the existing Vercel project. Store the approved execution-only HOLCluster cr
 ## Hosted verification — November 12, 2026 UTC
 
 Preview and production each completed an eight-step storm: four SQL classifications, zero fallbacks, three recovery model calls and one lower-priority skip. All four saved decisions and tools were readable by their own session. A second visitor stayed ready and could not read the first visitor’s decisions. Commands identified SQL++; usage totals excluded unavailable SQL tokens. Production deployment: dpl_Ga1wTkNio8RKEZRN2g4DxcpzuM78. Existing HOLCluster network rules were unchanged. AIR_SQL_JSON is a sensitive server variable; AIR_SQL_ENABLED explicitly enables SQL.
+
+Cost tracking separates SQL classification, direct classification/fallback and recovery. Measured direct tokens are retained even when SQL usage is unknown. Attempt counts include a SQL attempt preceding a saved fallback result. Only saved run results are covered; failed calls that never produce a result, expired/reset history, database and hosting are not a complete billing ledger. Dollar amounts use existing demo rates and are estimates, not invoice totals.

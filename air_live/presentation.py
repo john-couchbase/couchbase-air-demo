@@ -39,8 +39,27 @@ def resolution(d,rid):
     return {**req,**result,'id':rid,'status':'approved' if rid in d.get('approvals',[]) else 'drafted','prompt':'Policy 2026.1 and SQL++ context','agent_via':'model_service','memory_used':{'disruptions':[],'preferences':{},'notes':[],'source':'disabled'}}
 
 def bill(d):
+    """Keep measured direct usage separate from unreported SQL attempts."""
+    results=[r for r in d['results'] if not r.get('skipped')]
+    groups={}
+    for r in results:
+        path=r.get('inference_path','direct')
+        if path=='direct_fallback':
+            groups.setdefault(('classify','sql'),[]).append({'usage_available':False})
+        groups.setdefault((r['kind'],'sql' if path=='sql' else 'direct'),[]).append(r)
     rows=[]
-    for k in NAMES:
-        results=[r for r in d['results'] if r['kind']==k and not r.get('skipped')]
-        rows.append({'job':k,'model':('Nova Micro (SQL) + direct fallback' if k=='classify' and sql_enabled() else NAMES[k]),'calls':len(results),'cache_hits':sum(r.get('cache')=='hit' for r in results),'tokens_in':sum(r.get('tokens_in',0) for r in results),'tokens_out':sum(r.get('tokens_out',0) for r in results),'spend_usd':sum(cost(r) for r in results),'avoided_usd':0,'estimated':True})
-    return {'statement':'','rows':rows}
+    for (kind,path),items in groups.items():
+        measured=[r for r in items if r.get('usage_available',True)]
+        available=len(measured)==len(items)
+        rows.append({'job':kind+'_'+path,
+            'label':'SQL classification' if path=='sql' else 'Direct classification' if kind=='classify' else 'Recovery',
+            'model':'Nova Micro' if path=='sql' else NAMES[kind],
+            'calls':len(items),'measured_calls':len(measured),'usage_available':available,
+            'cache_hits':sum(r.get('cache')=='hit' for r in measured),
+            'tokens_in':sum(r.get('tokens_in',0) for r in measured),
+            'tokens_out':sum(r.get('tokens_out',0) for r in measured),
+            'spend_usd':sum(cost(r) for r in measured),'avoided_usd':0,'estimated':True})
+    return {'statement':'','rows':rows,
+        'tracking':{'attempts':sum(r['calls'] for r in rows),
+                    'measured':sum(r['measured_calls'] for r in rows),
+                    'unknown':sum(r['calls']-r['measured_calls'] for r in rows)}}

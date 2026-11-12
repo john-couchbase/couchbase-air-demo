@@ -19,4 +19,5 @@ class ModelService:
         value=json.loads(raw); usage=body.get('usage',{})
         cache=response.headers.get('x-cache','').lower()
         return value,{'tokens_in':usage.get('prompt_tokens',0),'tokens_out':usage.get('completion_tokens',0),
+                      'usage_available':all(type(usage.get(k)) is int and usage[k]>=0 for k in ('prompt_tokens','completion_tokens')),
                       'cache':'hit' if cache=='hit' else 'miss' if cache=='miss' else 'n/a','model':name}

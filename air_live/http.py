@@ -107,11 +107,6 @@ def read(name:str,request:Request):
     if name=='bill':
         usage=couchbase_queries(c,s).run(t,'usage')
         report=view.bill(d)
-        for row in report['rows']:
-            measured=next((u for u in usage if u['job']==row['job']),{})
-            row.update(calls=measured.get('calls',0),tokens_in=measured.get('tokens_in',0),tokens_out=measured.get('tokens_out',0))
-            rate=view.RATES[row['job']]
-            row['spend_usd']=(row['tokens_in']*rate[0]+row['tokens_out']*rate[1])/1000000
         report['statement']=QUERIES['usage']
         return report
     if name=='commands':return catalogue()
