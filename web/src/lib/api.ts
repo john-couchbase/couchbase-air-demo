@@ -45,3 +45,5 @@ export const pause = () => post<{ paused: string | null }>('/api/pause')
 export const resume = () => post<{ paused: string | null }>('/api/resume')
 
 export const advance = () => post<{advanced:boolean}>('/api/advance')
+
+export const getCommands = () => get<{mode:string;sections:{id:string;title:string;kind:string;note:string;code:string}[]}>('/api/commands')

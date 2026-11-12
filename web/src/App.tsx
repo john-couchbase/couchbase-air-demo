@@ -254,7 +254,7 @@ export default function App() {
           {view === 'recovery' && <Recovery key={`${example ? 'sample' : 'live'}-${recoveryRequest ?? 'queue'}`} state={state} initialRequest={recoveryRequest} onBackToMap={backToMap} />}
           {view === 'cost' && <Cost state={state} />}
           {view === 'models' && <Models />}
-          {view === 'sqlpp' && <Sqlpp />}
+          {view === 'sqlpp' && <Sqlpp state={state} example={example} />}
           <SiteFooter />
         </div>
       </div>
