@@ -106,7 +106,6 @@ export default function Storm({ state, onTrigger, onTour, example, onOpenRequest
         </svg>
       </header>
 
-      <LiveHandoff state={state} example={example} onOpenRequest={onOpenRequest} />
       <div className="dashboard-visuals"><FlightMap returnedRequest={returnedRequest} state={state} onTour={onTour} onOpenRequest={onOpenRequest} />
       <div className="card message-traffic" data-tour-target="requests" style={{ marginTop: 24 }}>
         <h3 style={{ marginBottom: 4 }}>Message activity</h3>
@@ -160,6 +159,7 @@ export default function Storm({ state, onTrigger, onTour, example, onOpenRequest
         <nav className="message-shortcuts" aria-label="Passenger conversations">
           {(example ? ['sample-001','sample-002','sample-003','sample-004'].map(demoResolution) : requests).map(r=><button key={r.id} type="button" onClick={()=>onOpenRequest(r.id)} aria-label={`View ${r.name}'s conversation`}><span><strong>{r.dest_city}</strong><span>{r.name}</span></span><span className="shortcut-action">View conversation</span></button>)}
         </nav>
+      <LiveHandoff state={state} example={example} onOpenRequest={onOpenRequest} />
     </div>
   )
 }
