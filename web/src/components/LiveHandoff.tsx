@@ -8,7 +8,7 @@ export default function LiveHandoff({state, example, onOpenRequest}:{state:State
   const latest=flow?.events.at(-1)
   const request=active?.request_id ?? latest?.request_id
   const visited=new Set(flow?.events.filter(e=>e.request_id===request).map(e=>e.stage))
-  const status=state?.error ? 'Interrupted' : active ? 'Processing' : state?.run_status==='complete' ? 'Complete' : state?.paused ? 'Paused' : latest ? 'Between steps' : example ? 'Live backend required' : 'Ready'
+  const status=state?.error ? 'Interrupted' : active?.stage==='reason' ? 'Classification → Claude' : active?.stage==='classify' ? 'Classifying request' : active ? 'Checking routing' : state?.run_status==='complete' ? 'Complete' : state?.paused ? 'Paused' : latest ? 'Between steps' : example ? 'Live backend required' : 'Ready'
   const cls=state?.funnel.classified ?? 0
   const reasoned=flow?.reasoned ?? 0
   const standard=flow?.standard ?? 0
@@ -25,10 +25,9 @@ export default function LiveHandoff({state, example, onOpenRequest}:{state:State
       <div className="processing-incoming">{block('context','Incoming messages','Request context',state?.funnel.inbound ?? 0)}</div>
       <div className={`processing-classifier${active?.stage==='classify'?' path-active':''}`}>{block('classify',viaSqlpp(state)?'AI Function':'Classification','Identify intent and urgency',cls)}</div>
       <div className="processing-small">{block('classify',classifyName(state),'Smaller model',cls,true)}</div>
-      <div className="processing-standard">{block('standard','Standard handling','No reasoning call',standard)}</div>
       <div className={`processing-router${active?.stage==='reason'?' path-active':''}`}>{block('route','Recovery filter','Urgency 3+ goes to reasoning',reasoned+standard)}</div>
-      <div className="processing-reasoning">{block('reason',agentName(state),'Reasoning model',reasoned,true)}</div>
+      <div className={`processing-reasoning${active?.stage==='reason'?' handoff-running':''}`}>{block('reason',agentName(state),'Reasoning model',reasoned,true)}</div>
     </div>
-    <footer><span>{request ? `Current request ${request.replace('sample-','')}` : 'Lighted boxes show the current backend step.'}</span>{request && <button className="btn" onClick={()=>onOpenRequest(request)}>View request</button>}</footer>
+    <footer><span className="routing-summary">{standard} finished without reasoning / {reasoned} used Claude</span><span>{request ? `Current request ${request.replace('sample-','')}` : 'Lighted boxes show the current backend step.'}</span>{request && <button className="btn" onClick={()=>onOpenRequest(request)}>View request</button>}</footer>
   </section>
 }
