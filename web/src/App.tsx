@@ -205,7 +205,6 @@ export default function App() {
   return (
     <div className="app" data-tour={tour === null ? undefined : tourSteps[tour].target}>
       {liveError && !example && <div role="alert" className="reference-note">{liveError}</div>}
-      {state?.sql_evidence?.enabled && <div className="reference-note" role="status">SQL classification: {state.sql_evidence.completed} completed / {state.sql_evidence.fallbacks} direct fallbacks{state.usage_incomplete ? ' — Cost totals exclude unavailable SQL usage.' : ''}</div>}
       <div className="presenter">
         <a className="brand" href="https://www.couchbase.com/" target="_blank" rel="noreferrer" aria-label="Couchbase website"><img src={theme === 'dark' ? '/brand/couchbase-logo-dark.svg' : '/brand/couchbase-logo.svg'} alt="Couchbase" /></a>
 
@@ -246,7 +245,7 @@ export default function App() {
             {([['demo', 'The scenario'], ['model', 'Model Service'], ['about', 'Couchbase platform']] as const).map(([id, label]) =>
               <button key={id} aria-current={view === id ? 'page' : undefined} onClick={() => { setTour(null); setRecoveryRequest(null); setView(id) }}>{label}</button>)}
           </nav>}
-          {!example && state && (phase !== 'normal' || paused === 'user') && <div className="run-note" role="status">{paused === 'user' ? 'Paused' : PHASE_LABEL[phase]}</div>}
+          {!example && state && (phase !== 'normal' || paused === 'user') && <div className="run-note run-progress" role="status"><span>{paused === 'user' ? 'Paused' : PHASE_LABEL[phase]}</span>{state.sql_evidence?.enabled && <span className="sql-progress">{state.sql_evidence.completed > 0 ? `${state.sql_evidence.completed} classified with SQL` : 'Waiting for SQL'}{state.sql_evidence.fallbacks > 0 && <span className="sql-fallback">{state.sql_evidence.fallbacks} used direct fallback</span>}</span>}</div>}
           {!state && <div className="connection-note" role="status">Local preview / Backend not connected. Live results appear when connected.</div>}
           {view === 'about' && <About />}
           {view === 'model' && <ModelService />}
