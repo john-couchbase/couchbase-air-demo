@@ -3,6 +3,7 @@
 Disabled unless AIR_SQL_CONFIG points to a private cluster credential file or
 AIR_SQL_JSON contains the equivalent server-only configuration.
 """
+from .sql_cost import estimate
 import json
 import os
 from pathlib import Path
@@ -42,6 +43,7 @@ class SQLFirstModel:
             validate_classification(value)
             return value, {'tokens_in': 0, 'tokens_out': 0,
                 'usage_available': False, 'cache': 'n/a',
+                'sql_estimate': estimate(system,user,rows[0]['response'][0]['response']),
                 'model': 'amazon.nova-micro-v1:0', 'inference_path': 'sql',
                 'attempts': 1}
         except Exception as error:

@@ -1,5 +1,8 @@
 """Map persisted live evidence to the existing frontend contract."""
 import time
+import json
+from .sql_cost import estimate
+from .engine import PROMPTS
 from .sql_models import sql_enabled
 from .engine import REQUESTS
 RATES={'classify':(.33,2.75),'agent':(2,10)} # Existing demo estimates, not a billing quote.
@@ -40,7 +43,13 @@ def resolution(d,rid):
 
 def bill(d):
     """Keep measured direct usage separate from unreported SQL attempts."""
-    results=[r for r in d['results'] if not r.get('skipped')]
+    results=[dict(r) for r in d['results'] if not r.get('skipped')]
+    for r in results:
+        if r.get('inference_path')=='sql' and not r.get('sql_estimate'):
+            request=next((q for q in d.get('requests',[]) if q['id']==r.get('request_id')),None)
+            if request and r.get('classification'):
+                r['sql_estimate']=estimate(PROMPTS['classify_prompt'],request['message'],json.dumps(r['classification'],ensure_ascii=False))
+                r['sql_estimate']['reconstructed']=True
     groups={}
     for r in results:
         path=r.get('inference_path','direct')
@@ -51,9 +60,11 @@ def bill(d):
     for (kind,path),items in groups.items():
         measured=[r for r in items if r.get('usage_available',True)]
         available=len(measured)==len(items)
+        estimates=[r['sql_estimate'] for r in items if r.get('sql_estimate') and not r.get('usage_available',True)]
         rows.append({'job':kind+'_'+path,
             'label':'SQL classification' if path=='sql' else 'Direct classification' if kind=='classify' else 'Recovery',
             'model':'Nova Micro' if path=='sql' else NAMES[kind],
+            'estimated_calls':len(estimates),'estimated_tokens_in':sum(e['input_tokens'] for e in estimates),'estimated_tokens_out':sum(e['output_tokens'] for e in estimates),'estimated_sql_usd':sum(e['cost_usd'] for e in estimates),
             'calls':len(items),'measured_calls':len(measured),'usage_available':available,
             'cache_hits':sum(r.get('cache')=='hit' for r in measured),
             'tokens_in':sum(r.get('tokens_in',0) for r in measured),
@@ -62,4 +73,5 @@ def bill(d):
     return {'statement':'','rows':rows,
         'tracking':{'attempts':sum(r['calls'] for r in rows),
                     'measured':sum(r['measured_calls'] for r in rows),
+                    'estimated':sum(r['estimated_calls'] for r in rows),
                     'unknown':sum(r['calls']-r['measured_calls'] for r in rows)}}

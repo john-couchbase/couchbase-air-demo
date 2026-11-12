@@ -163,10 +163,10 @@ export interface Resolution {
 }
 
 export interface Bill {
-  tracking?: { attempts:number; measured:number; unknown:number }
+  tracking?: { attempts:number; measured:number; estimated?:number; unknown:number }
   statement: string
   rows: {
-    job: string; label?: string; usage_available?: boolean; measured_calls?: number; model: string; calls: number; cache_hits: number
+    job: string; estimated_calls?: number; estimated_tokens_in?: number; estimated_tokens_out?: number; estimated_sql_usd?: number; label?: string; usage_available?: boolean; measured_calls?: number; model: string; calls: number; cache_hits: number
     tokens_in: number; tokens_out: number; spend_usd: number; avoided_usd: number
     estimated: boolean
   }[]
