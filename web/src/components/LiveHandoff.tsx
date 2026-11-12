@@ -1,5 +1,5 @@
 import type { State } from '../lib/types'
-import { agentName, classifyName } from '../lib/models'
+import { agentName, classifyName, viaSqlpp } from '../lib/models'
 import './LiveHandoff.css'
 
 export default function LiveHandoff({state, example, onOpenRequest}:{state:State|null;example:boolean;onOpenRequest:(id:string)=>void}) {
@@ -8,22 +8,27 @@ export default function LiveHandoff({state, example, onOpenRequest}:{state:State
   const latest=flow?.events.at(-1)
   const request=active?.request_id ?? latest?.request_id
   const visited=new Set(flow?.events.filter(e=>e.request_id===request).map(e=>e.stage))
-  const status=state?.error ? 'Request interrupted' : active ? 'Processing request' : state?.run_status==='complete' ? 'Run complete' : state?.paused ? 'Paused' : latest ? 'Waiting for next step' : example ? 'Live backend required' : 'Ready for the storm'
-  const nodes=[
-    {id:'context',title:'Message',sub:'Load request',count:state?.funnel.inbound ?? 0},
-    {id:'classify',title:'Classify',sub:`${classifyName(state)} — small model`,count:state?.funnel.classified ?? 0},
-    {id:'route',title:'Route',sub:'Recovery needed?',count:(flow?.reasoned ?? 0)+(flow?.standard ?? 0)},
-    {id:'reason',title:'Reason',sub:agentName(state),count:flow?.reasoned ?? 0},
-    {id:'standard',title:'Standard handling',sub:'No reasoning call',count:flow?.standard ?? 0},
-  ]
-  return <section className="card live-handoff" aria-label="Live model handoff">
-    <header><div><h3>Live model flow</h3><p>Small model first. Reasoning for recovery requests.</p></div><span role="status">{status}</span></header>
-    <div className="handoff-track">
-      {nodes.map(n=><div key={n.id} className={`handoff-node handoff-${n.id}${active?.stage===n.id?' is-active':''}${visited.has(n.id)?' is-visited':''}`} aria-current={active?.stage===n.id?'step':undefined}>
-        <div><strong>{n.title}</strong><span className="handoff-count">{n.count}</span></div>
-        <p>{n.sub}</p><span className="handoff-state">{active?.stage===n.id?'Running now':visited.has(n.id)?'Passed through':n.id==='reason'?'Recovery branch':n.id==='standard'?'Routine branch':'Waiting'}</span>
-      </div>)}
+  const status=state?.error ? 'Interrupted' : active ? 'Processing' : state?.run_status==='complete' ? 'Complete' : state?.paused ? 'Paused' : latest ? 'Between steps' : example ? 'Live backend required' : 'Ready'
+  const cls=state?.funnel.classified ?? 0
+  const reasoned=flow?.reasoned ?? 0
+  const standard=flow?.standard ?? 0
+  const block=(stage:string,title:string,description:string,count:number,model=false)=>
+    <div className={`processing-node node-${stage}${model?' model-node':''}${active?.stage===stage?' is-active':''}${visited.has(stage)?' was-reached':''}`} aria-current={active?.stage===stage?'step':undefined}>
+      <div className="processing-node-heading"><strong>{title}</strong><span>{count}</span></div>
+      <p>{description}</p>
+      <div className="processing-indicator"><span className="activity-slot" aria-hidden="true"/><span>{active?.stage===stage?'Running':visited.has(stage)?'Reached':model?'Standby':'Waiting'}</span></div>
     </div>
-    <footer><span>{request ? `Request ${request.replace('sample-','')}` : 'Boxes light up as the backend reaches each step.'}</span>{request && <button className="btn" onClick={()=>onOpenRequest(request)}>View request</button>}</footer>
+  return <section className="live-handoff" aria-label="Live model handoff">
+    <header className="processing-heading"><div><span className="processing-eyebrow">Behind the scenes</span><h2>Live processing</h2><p>Every request is classified. Only recovery requests reach the reasoning model.</p></div><span className="processing-status" role="status">{status}</span></header>
+    <div className="processing-board">
+      <div className="processing-column-label">Requests</div><div className="processing-column-label">Couchbase SQL++</div><div className="processing-column-label">Model Service</div>
+      <div className="processing-incoming">{block('context','Incoming messages','Request context',state?.funnel.inbound ?? 0)}</div>
+      <div className={`processing-classifier${active?.stage==='classify'?' path-active':''}`}>{block('classify',viaSqlpp(state)?'AI Function':'Classification','Identify intent and urgency',cls)}</div>
+      <div className="processing-small">{block('classify',classifyName(state),'Smaller model',cls,true)}</div>
+      <div className="processing-standard">{block('standard','Standard handling','No reasoning call',standard)}</div>
+      <div className={`processing-router${active?.stage==='reason'?' path-active':''}`}>{block('route','Recovery filter','Urgency 3+ goes to reasoning',reasoned+standard)}</div>
+      <div className="processing-reasoning">{block('reason',agentName(state),'Reasoning model',reasoned,true)}</div>
+    </div>
+    <footer><span>{request ? `Current request ${request.replace('sample-','')}` : 'Lighted boxes show the current backend step.'}</span>{request && <button className="btn" onClick={()=>onOpenRequest(request)}>View request</button>}</footer>
   </section>
 }
