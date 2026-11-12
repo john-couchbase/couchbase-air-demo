@@ -925,8 +925,8 @@ button:focus-visible, summary:focus-visible { outline: 3px solid #0266C2; outlin
 .command-context dl > div + div { border-left: 1px solid var(--section-edge); }
 .command-context dt { font-size: var(--ui-label); color: var(--text-muted); }
 .command-context dd { margin: 0; font-size: var(--ui-body); font-weight: 500; }
-.command-group { margin-top: 20px; }
-.command-group h2 { margin: 0 0 10px; font-size: 16px; }
+.command-group { margin-top: 28px; }
+.command-group h2 { margin: 0 0 14px; font-size: 16px; }
 .command-list { display: grid; gap: 8px; }
 .command-card { margin: 0; padding: 0; min-width: 0; overflow: hidden; border: 1px solid var(--section-edge); border-radius: 6px; background: var(--surface-card); }
 .command-toggle { display: flex; justify-content: space-between; align-items: center; gap: 16px; width: 100%; min-height: 56px; padding: 12px 16px; border: 0; border-radius: 0; background: var(--section-detail); color: var(--text-strong); text-align: left; cursor: pointer; transition: background .18s, color .18s; }
@@ -951,7 +951,7 @@ button:focus-visible, summary:focus-visible { outline: 3px solid #0266C2; outlin
  .command-context dl > div:nth-child(2) { border-left: 0; }
 }
 
-.command-code-heading{display:flex;align-items:flex-start;gap:16px;justify-content:space-between}.command-code-heading p{margin:0;min-width:0}.command-copy{display:flex;align-items:center;justify-content:center;gap:8px;flex-shrink:0;min-height:44px;padding:8px 12px;border:1px solid var(--border-subtle);border-radius:6px;background:var(--surface-card);color:var(--text-body);font:inherit;cursor:pointer}.command-copy:hover{background:var(--surface-subtle)}
+.command-code-heading{display:flex;align-items:center;gap:12px 24px;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap}.command-code-heading p{margin:0;min-width:0}.command-copy{display:flex;align-items:center;justify-content:center;gap:8px;flex-shrink:0;min-height:44px;padding:8px 12px;border:1px solid var(--border-subtle);border-radius:6px;background:var(--surface-card);color:var(--text-body);font:inherit;cursor:pointer}.command-copy:hover{background:var(--surface-subtle)}
 
 /* Compact run evidence shares the existing status row, never the toolbar. */
 .run-progress { display:flex; align-items:center; flex-wrap:wrap; gap:6px 14px; }
