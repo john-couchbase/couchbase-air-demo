@@ -15,6 +15,8 @@ export interface Backend {
 }
 
 export interface State {
+  sql_evidence?: { enabled: boolean; completed: number; fallbacks: number }
+  usage_incomplete?: boolean
   generation?: string
   run_status?: string
   error?: string

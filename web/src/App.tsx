@@ -205,6 +205,7 @@ export default function App() {
   return (
     <div className="app" data-tour={tour === null ? undefined : tourSteps[tour].target}>
       {liveError && !example && <div role="alert" className="reference-note">{liveError}</div>}
+      {state?.sql_evidence?.enabled && <div className="reference-note" role="status">SQL classification: {state.sql_evidence.completed} completed / {state.sql_evidence.fallbacks} direct fallbacks{state.usage_incomplete ? ' — Cost totals exclude unavailable SQL usage.' : ''}</div>}
       <div className="presenter">
         <a className="brand" href="https://www.couchbase.com/" target="_blank" rel="noreferrer" aria-label="Couchbase website"><img src={theme === 'dark' ? '/brand/couchbase-logo-dark.svg' : '/brand/couchbase-logo.svg'} alt="Couchbase" /></a>
 
@@ -284,7 +285,7 @@ export default function App() {
         <div className="standin-bar">
           Sandbox-like local mode: the Model Service is a local stand-in at {state?.backend.endpoint},
           imitating sbx-27 (exact-match cache, x-cache on hits, semantic not stored), over LM Studio
-          models{state?.backend.classify_via === 'sqlpp' ? '; ai_completion is a local UDF' : ''}.
+          models{state?.backend.classify_via === 'sqlpp' ? '; ai_completion runs through Capella SQL' : ''}.
           Token counts are measured; prices are Bedrock list prices.
         </div>
       )}

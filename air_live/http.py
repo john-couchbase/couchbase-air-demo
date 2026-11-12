@@ -8,6 +8,7 @@ from .sessions import Unauthorized,Busy
 from .queries import couchbase_queries,QUERIES
 from .engine import Engine,PROMPTS
 from .models import ModelService
+from .sql_models import local_sql_model, sql_enabled, SQL_COMPLETION
 from .budget import Budget,Capacity,DailyLimit
 from . import presentation as view
 from .commands import catalogue
@@ -26,7 +27,15 @@ async def unauthorized(req,err):return JSONResponse({'error':'Session unavailabl
 async def busy(req,err):return JSONResponse({'error':str(err)},status_code=409)
 
 def services():
-    c,s=runtime();return s,Engine(s,couchbase_queries(c,s),ModelService())
+    c,s=runtime()
+    direct=ModelService()
+    def fallback(kind,system,user):
+        budget=Budget(s.store,int(os.environ.get('AIR_DAILY_CALL_LIMIT','96')))
+        reservation=budget.reserve()
+        try:return direct(kind,system,user)
+        finally:budget.release(reservation)
+    model=local_sql_model(direct, fallback=fallback)
+    return s,Engine(s,couchbase_queries(c,s),model)
 def token(request):
     auth=request.headers.get('authorization','')
     if not auth.startswith('Bearer '):raise Unauthorized()
@@ -44,7 +53,7 @@ def guarded(request):
 def health():
     c,s=runtime()
     s.store.collection.exists('air-readiness')
-    return {'database':'connected','memory':'disabled','ai_functions':'not_configured','execution':'direct_model_service'}
+    return {'database':'connected','memory':'disabled','ai_functions':'configured' if sql_enabled() else 'not_configured','execution':'sql_with_direct_fallback' if sql_enabled() else 'direct_model_service'}
 @app.post('/api/session')
 def session(request:Request):
     guarded(request);s,e=services()
@@ -106,7 +115,7 @@ def read(name:str,request:Request):
         report['statement']=QUERIES['usage']
         return report
     if name=='commands':return catalogue()
-    if name=='sqlpp':return {'classify':'Direct Model Service call; SQL AI Function is not configured.',**QUERIES,**PROMPTS}
+    if name=='sqlpp':return {'classify':SQL_COMPLETION if sql_enabled() else 'Direct Model Service call; SQL AI Function is not configured.',**QUERIES,**PROMPTS}
     if name=='models':return {'catalog':[],'backend':view.BACKEND}
     if name=='feed':
         rows=[]

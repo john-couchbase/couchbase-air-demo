@@ -1,10 +1,11 @@
 """One command catalogue for the server and optional technical inspector."""
+from .sql_models import sql_enabled, SQL_COMPLETION
 from .queries import QUERIES
 from .engine import PROMPTS, AGENT_PROMPT
 
 def catalogue():
     return {'mode':'reference','sections':[
-        {'id':'classify','title':'Classify the message','kind':'Model Service','note':'Direct model call. SQL AI Function is not configured on this cluster.','code':'POST /v1/chat/completions\nmodel: CLASSIFY_MODEL_NAME\nmessages: system prompt + passenger message'},
+        {'id':'classify','title':'Classify the message','kind':'SQL++' if sql_enabled() else 'Model Service','note':'SQL classification with direct model fallback.' if sql_enabled() else 'Direct model call. SQL AI Function is not configured on this cluster.','code':SQL_COMPLETION if sql_enabled() else 'POST /v1/chat/completions\nmodel: CLASSIFY_MODEL_NAME\nmessages: system prompt + passenger message'},
         {'id':'context','title':'Look up the request','kind':'SQL++','note':'Reads only the visitor’s current run.','code':QUERIES['context']},
         {'id':'partners','title':'Find available options','kind':'SQL++','note':'Reads the options supplied for this scenario, not live airline inventory.','code':QUERIES['partners']},
         {'id':'funnel','title':'Route urgent requests','kind':'SQL++','note':'Selects classified requests with urgency of three or higher.','code':QUERIES['funnel']},

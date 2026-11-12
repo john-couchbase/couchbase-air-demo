@@ -1,5 +1,6 @@
 """Map persisted live evidence to the existing frontend contract."""
 import time
+from .sql_models import sql_enabled
 from .engine import REQUESTS
 RATES={'classify':(.33,2.75),'agent':(2,10)} # Existing demo estimates, not a billing quote.
 NAMES={'classify':'Nova 2 Lite','agent':'Claude Sonnet 5'}
@@ -16,7 +17,9 @@ def state(d):
     'elapsed_s':elapsed,'storm_at_s':0 if started else None,'quiet_at_s':elapsed if d['status']=='complete' else None,
     'funnel':{'inbound':4 if started else 0,'classified':len(cls),'surge':4 if started else 0,'escalated':len(agents)+int(kind=='agent'),'in_agent':int(kind=='agent'),'approved':len(d.get('approvals',[]))},
     'cache':{'hits':sum(r.get('cache')=='hit' for r in cls),'misses':sum(r.get('cache')=='miss' for r in cls),'entries':0,'avoided_usd':0},
-    'spend':spend,'tokens':tokens,'reserved':{'label':'Comparison disabled','per_hour':0,'so_far':0},'models':NAMES,'model_names':{k:{'name':v,'short':v} for k,v in NAMES.items()},'backend':BACKEND,
+    'spend':spend,'tokens':tokens,'reserved':{'label':'Comparison disabled','per_hour':0,'so_far':0},'models':{**NAMES,'classify':'Nova Micro (SQL)' if sql_enabled() else NAMES['classify']},'model_names':{k:{'name':('Nova Micro / direct fallback' if k=='classify' and sql_enabled() else v),'short':('Nova Micro' if k=='classify' and sql_enabled() else v)} for k,v in NAMES.items()},'backend':{**BACKEND, 'ai_functions':'query_service' if sql_enabled() else 'disabled','classify_via':'sqlpp' if sql_enabled() else 'backend'},
+    'sql_evidence':{'enabled':sql_enabled(),'completed':sum(r.get('inference_path')=='sql' for r in cls),'fallbacks':sum(r.get('inference_path')=='direct_fallback' for r in cls)},
+    'usage_incomplete':any(r.get('usage_available') is False or r.get('inference_path')=='direct_fallback' for r in results),
     'live':{'window_s':10,'arrivals_per_s':0,'classify_per_s':0,'cache_per_s':0,'classify_in_flight':int(kind=='classify'),'classify_slots':1,'agent_in_flight':int(kind=='agent'),'agent_slots':1,'spend_per_min':0,'reserved_per_min':0},
     'run_status':d['status'],'generation':d['generation'],'error':d.get('error'),'cost_estimated':True}
 
@@ -39,5 +42,5 @@ def bill(d):
     rows=[]
     for k in NAMES:
         results=[r for r in d['results'] if r['kind']==k and not r.get('skipped')]
-        rows.append({'job':k,'model':NAMES[k],'calls':len(results),'cache_hits':sum(r.get('cache')=='hit' for r in results),'tokens_in':sum(r.get('tokens_in',0) for r in results),'tokens_out':sum(r.get('tokens_out',0) for r in results),'spend_usd':sum(cost(r) for r in results),'avoided_usd':0,'estimated':True})
+        rows.append({'job':k,'model':('Nova Micro (SQL) + direct fallback' if k=='classify' and sql_enabled() else NAMES[k]),'calls':len(results),'cache_hits':sum(r.get('cache')=='hit' for r in results),'tokens_in':sum(r.get('tokens_in',0) for r in results),'tokens_out':sum(r.get('tokens_out',0) for r in results),'spend_usd':sum(cost(r) for r in results),'avoided_usd':0,'estimated':True})
     return {'statement':'','rows':rows}
