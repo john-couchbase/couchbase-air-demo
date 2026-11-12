@@ -1,3 +1,4 @@
+import LiveHandoff from '../components/LiveHandoff'
 import Stat from '../components/MetricCard'
 import './Dashboard.css'
 import FlightMap from '../components/FlightMap'
@@ -105,6 +106,7 @@ export default function Storm({ state, onTrigger, onTour, example, onOpenRequest
         </svg>
       </header>
 
+      <LiveHandoff state={state} example={example} onOpenRequest={onOpenRequest} />
       <div className="dashboard-visuals"><FlightMap returnedRequest={returnedRequest} state={state} onTour={onTour} onOpenRequest={onOpenRequest} />
       <div className="card message-traffic" data-tour-target="requests" style={{ marginTop: 24 }}>
         <h3 style={{ marginBottom: 4 }}>Message activity</h3>

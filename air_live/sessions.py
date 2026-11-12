@@ -77,12 +77,22 @@ class Sessions:
         if claim is None: raise Busy('No work available')
         return claim
 
+    def activity(self,token,claim,stage,request_id):
+        def apply(d):
+            if d['claim']!=claim or d['generation']!=claim['generation']: return False
+            d['flow_active']={'stage':stage,'request_id':request_id}
+            events=d.setdefault('flow_events',[])
+            events.append({'stage':stage,'request_id':request_id,'ts':self.clock()})
+            d['flow_events']=events[-32:]
+            return True
+        return self.mutate(token,apply)
+
     def complete(self,token,claim,result):
         def apply(d):
             if d['claim']!=claim or d['generation']!=claim['generation']: return False
             if claim['expires_at']<=self.clock():
                 d['status']='interrupted'; return False
-            d['results'].append(result); d['claim']=None
+            d['results'].append(result); d['claim']=None; d['flow_active']=None
             if len(d['results'])>=8: d['status']='complete'
             return True
         return self.mutate(token,apply)
@@ -90,6 +100,6 @@ class Sessions:
     def fail(self,token,claim,code):
         def apply(d):
             if d['claim']!=claim: return False
-            d['status']='error'; d['error']=code; d['claim']=None
+            d['status']='error'; d['error']=code; d['claim']=None; d['flow_active']=None
             return True
         return self.mutate(token,apply)

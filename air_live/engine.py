@@ -36,12 +36,14 @@ class Engine:
         claim=self.sessions.claim(token); step=claim['step']; rid=REQUESTS[step//2]['id']
         kind='classify' if step%2==0 else 'agent'; start=time.monotonic()
         try:
+            self.sessions.activity(token,claim,'context',rid)
             tool_start=time.monotonic()
             context=self.queries.run(token,'context',request_id=rid)
             context_ms=round((time.monotonic()-tool_start)*1000)
             if not context: raise ValueError('Request unavailable')
             request=context[0]
             if kind=='classify':
+                self.sessions.activity(token,claim,'classify',rid)
                 value,usage=self.model(kind,PROMPTS['classify_prompt'],request['message'])
                 validate_classification(value)
                 result={'classification':value}
@@ -49,14 +51,17 @@ class Engine:
                 tool_start=time.monotonic()
                 options=self.queries.run(token,'partners',request_id=rid)
                 options_ms=round((time.monotonic()-tool_start)*1000)
+                self.sessions.activity(token,claim,'route',rid)
                 routed=self.queries.run(token,'funnel')
                 needs_recovery=any(row.get('request_id')==rid for row in routed)
                 previous=self.sessions.read(token)['results']
                 classification=next(x['classification'] for x in previous if x.get('request_id')==rid and x.get('kind')=='classify')
                 payload={'request':request,'classification':classification,'options':options,'memory':'disabled','policy_version':'2026.1'}
                 if needs_recovery:
+                    self.sessions.activity(token,claim,'reason',rid)
                     value,usage=self.model(kind,AGENT_PROMPT+'\n'+PROMPTS['policy'],json.dumps(payload))
                 else:
+                    self.sessions.activity(token,claim,'standard',rid)
                     value={'recommended_option':'','backup_option':'','why':'Classification did not require a recovery decision.','goodwill_miles':0,'vouchers':[],'actions':[],'reply':'Your request has been classified for staff review. No booking changes were made.','memory_note':''}
                     usage={'tokens_in':0,'tokens_out':0,'model':'No recovery model called','cache':'n/a','skipped':True}
                 validate_decision(value,options,request['tier'])

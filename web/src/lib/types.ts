@@ -15,6 +15,7 @@ export interface Backend {
 }
 
 export interface State {
+  flow?: { active: {stage:string; request_id:string} | null; events: {stage:string;request_id:string;ts:number}[]; reasoned:number; standard:number }
   sql_evidence?: { enabled: boolean; completed: number; fallbacks: number }
   usage_incomplete?: boolean
   generation?: string
