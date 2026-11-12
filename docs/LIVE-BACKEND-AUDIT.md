@@ -15,7 +15,7 @@
 
 The original Air cluster is off. This version uses curated airline scenario inputs copied into each new run, not the original shared passenger/flight tables or live airline inventory. SQL joins are replaced by scoped lookups and UNNEST queries over the run document.
 
-The new cluster has no registered `ai_completion` function. Classification currently calls Capella Model Service directly; it does not run inference inside SQL++. The UI identifies that distinction. Enabling SQL AI inference is a separate remaining configuration step.
+Run data remains on the existing runtime cluster. SQL classification uses the separate eligible HOLCluster and its execution-only credential; direct Model Service remains the fallback. Recovery uses direct Model Service. SQL token usage is unavailable, so reported cost totals exclude it. See [SQL setup](sql-local-testing.md).
 
 The backend executes context tools before asking the recovery model to choose an option. It does not claim autonomous model-selected tool calls or MCP execution.
 
@@ -43,3 +43,5 @@ Model prices reuse the original demo's configured estimates. Actual tokens are m
 Published to https://couchbase-air-simulation.vercel.app/ on 2026-11-11 (deployment `dpl_7QkeeEWe3aZp5H1nXa2rbUvzG1gw`). Protected preview completed real classification, SQL context, recovery, persistence and reset. Public production health, ten independent sessions, controls, SQL usage and Commands all passed. Original main branch and original cluster are unchanged.
 
 The optional SQL AI Function has additional cluster prerequisites; see [Couchbase AI Functions](https://docs.couchbase.com/ai/build/ai-functions.html). No cluster upgrade or support-plan change was made.
+
+SQL rollout verified November 12, 2026 UTC: deployment dpl_Ga1wTkNio8RKEZRN2g4DxcpzuM78. Preview and public production passed full storms and two-session isolation checks. See [SQL verification](sql-local-testing.md).

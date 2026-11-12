@@ -16,10 +16,11 @@ Follow a flight disruption through passenger conversations, tool calls, and reco
 ## What it uses
 
 - Each visitor gets a separate run with saved requests, decisions, and usage in Capella.
-- Model Service classifies messages and drafts recovery proposals.
-- Agent Memory and SQL AI Functions are not connected in this hosted version.
+- SQL AI Functions classify messages through Nova Micro, with direct Model Service fallback.
+- Model Service drafts recovery proposals using the request, policy and SQL tool results.
+- Agent Memory remains disabled. SQL token usage is unavailable and excluded from cost totals.
 - Flights and passengers are fictional. The demo does not change real bookings.
-- The shared allowance is 96 daily step reservations, with three concurrent model operations and 12 steps per session across resets.
+- The shared allowance is 96 daily step reservations, with three concurrent model operations and 12 steps per session across resets. A direct fallback reserves an additional call.
 
 ## Run locally
 
@@ -27,7 +28,7 @@ Install `requirements.txt`, `uvicorn`, and the dependencies in `web/`. Keep priv
 
 Run `python -m uvicorn air_live.http:app --port 8010`, then `npm run dev:live --prefix web`.
 
-`npm run dev --prefix web` runs the scripted simulation instead. See [the backend audit](docs/LIVE-BACKEND-AUDIT.md) for configuration and verification.
+`npm run dev --prefix web` runs the scripted simulation instead. See [the backend audit](docs/LIVE-BACKEND-AUDIT.md) for configuration and verification. See [SQL setup](docs/sql-local-testing.md) for the SQL connection, fallback and rollback controls.
 
 ## Details and feedback
 
