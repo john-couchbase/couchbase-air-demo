@@ -37,3 +37,9 @@ Run `python -m uvicorn air_live.http:app --port 8010`, then `npm run dev:live --
 - [Couchbase setup skill](https://github.com/john-couchbase/couchbase-aidp-setup)
 
 When reporting an issue, include the request or input, what you expected, and a screenshot. Mention whether you used a phone, tablet, or computer.
+
+## Simulation and live data
+
+- Simulation is the default and runs entirely in your browser, even when the backend is off.
+- Choose Live data in the header to connect to the existing isolated Couchbase run.
+- Switching modes reloads the page so sample and live results stay separate. Simulation makes no backend or model calls.

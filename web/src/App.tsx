@@ -2,7 +2,7 @@ import { Link2 } from 'lucide-react'
 import SiteFooter from './components/SiteFooter'
 import { createPortal } from 'react-dom'
 import TourPreview from './components/TourPreview'
-import { resetExample, startExample, sampleState } from './lib/example'
+import { startExample, sampleState, exampleActive } from './lib/example'
 import { useCallback, useEffect, useState } from 'react'
 import * as api from './lib/api'
 import type { State } from './lib/types'
@@ -52,7 +52,7 @@ export default function App() {
     document.documentElement.dataset.theme = theme
     try { localStorage.setItem('air-theme', theme) } catch { /* Private browsing may block storage. */ }
   }, [theme])
-  const [example, setExample] = useState(import.meta.env.MODE === 'simulation')
+  const [example, setExample] = useState(exampleActive())
   const [tour, setTour] = useState<number | null>(null)
   const [tourHost, setTourHost] = useState<HTMLDivElement | null>(null)
   const [spot, setSpot] = useState({top:0,left:0,width:0,height:0, noteTop:0,noteLeft:0,previewTop:0,previewLeft:0})
@@ -196,7 +196,6 @@ export default function App() {
   }
 
   const beginExample = () => { setReturnedRequest(null); startExample(); api.storm(); setExample(true); setState(sampleState()); setTour(null); setNonce(n=>n+1) }
-  const endExample = () => { setReturnedRequest(null); resetExample(); setExample(false); setState(null); setView('storm'); setNonce(n=>n+1) }
   const phase = state?.phase ?? 'normal'
   const paused = state?.paused ?? null
   const local = state?.backend.models === 'local_standin'
@@ -218,12 +217,15 @@ export default function App() {
         <div className="spacer" />
 
         <div className="demo-controls">
+          <nav className="data-mode" aria-label="Data mode">
+            <a href="?mode=simulation" aria-current={example ? 'page' : undefined}>Simulation</a>
+            <a href="?mode=live" aria-current={!example ? 'page' : undefined}>Live data</a>
+          </nav>
           <details className="demo-menu" onKeyDown={e => {
             if(e.key === 'Escape') { e.currentTarget.open=false; e.currentTarget.querySelector('summary')?.focus() }
           }} onBlur={e => { if(!e.currentTarget.contains(e.relatedTarget as Node)) e.currentTarget.open=false }}>
             <summary>More</summary>
             <div className="toolbar-menu">
-              {import.meta.env.MODE !== 'simulation' && <button onClick={e=>{example ? endExample() : beginExample(); e.currentTarget.closest('details')!.open=false}}>{example ? 'Exit sample data' : 'Show sample data'}</button>}
               {example && <button onClick={e=>{beginExample();e.currentTarget.closest('details')!.open=false}}>Restart simulation</button>}
               <button onClick={e => {setTour(null); setView('sqlpp'); e.currentTarget.closest('details')!.open=false}}>Commands</button>
               <span className="menu-label menu-divider">Run controls</span>

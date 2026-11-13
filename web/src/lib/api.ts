@@ -14,15 +14,15 @@ async function headers() {
 }
 
 async function get<T>(path: string): Promise<T> {
-  if (import.meta.env.MODE === 'simulation' || exampleActive()) return exampleResponse(path) as T
+  if (exampleActive()) return exampleResponse(path) as T
   const r = await fetch(path, {headers:await headers()})
-  if (import.meta.env.MODE === 'simulation' || exampleActive()) return exampleResponse(path) as T
+  if (exampleActive()) return exampleResponse(path) as T
   if (!r.ok) { const error=await r.json().catch(()=>({})); throw new Error(error.error || error.detail || `Request failed (${r.status})`) }
   return r.json()
 }
 
 async function post<T>(path: string): Promise<T> {
-  if (import.meta.env.MODE === 'simulation' || exampleActive()) return exampleResponse(path) as T
+  if (exampleActive()) return exampleResponse(path) as T
   const r = await fetch(path, { method: 'POST', headers:await headers() })
   if (!r.ok) { const error=await r.json().catch(()=>({})); throw new Error(error.error || error.detail || `Request failed (${r.status})`) }
   return r.json()
